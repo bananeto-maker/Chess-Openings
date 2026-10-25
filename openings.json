@@ -1,0 +1,3103 @@
+{
+ "version": 1,
+ "generated": "2026-10-24",
+ "openings": [
+  {
+   "id": "italienisch",
+   "name": "Italienische Partie",
+   "side": "w",
+   "eco": "C50–C54",
+   "group": "1.e4 e5",
+   "idea": "Weiß entwickelt schnell die Figuren und stellt den Läufer auf c4, wo er auf den schwachen Punkt f7 zielt. Mit c3 und d3 baut Weiß ein ruhiges, festes Zentrum auf und bereitet später d4 vor. Ideal für Einsteiger, weil die Pläne klar und natürlich sind.",
+   "lines": [
+    {
+     "name": "Giuoco Pianissimo (3…Lc5)",
+     "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bc4",
+      "Bc5",
+      "c3",
+      "Nf6",
+      "d3",
+      "d6",
+      "O-O",
+      "O-O",
+      "Re1",
+      "a6",
+      "Bb3",
+      "Ba7",
+      "h3",
+      "h6",
+      "Nbd2"
+     ],
+     "comments": {
+      "1": "Besetzt das Zentrum und öffnet Dame und Läufer.",
+      "3": "Greift e5 an und entwickelt eine Figur.",
+      "5": "Der Läufer zielt auf f7, den schwächsten Punkt bei Schwarz.",
+      "7": "Bereitet d4 vor und nimmt dem schwarzen Springer das Feld d4.",
+      "9": "Ruhig: deckt e4, das Zentrum bleibt stabil.",
+      "11": "König in Sicherheit, der Turm kommt näher ins Spiel.",
+      "13": "Der Turm stützt e4 und kann später d4 unterstützen.",
+      "15": "Weicht dem drohenden …b5 vorab aus.",
+      "17": "Verhindert …Lg4, das den Springer f3 fesseln würde.",
+      "19": "Der Springer geht über d2 nach f1 und g3."
+     }
+    },
+    {
+     "name": "Zweispringerspiel (4.d3)",
+     "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bc4",
+      "Nf6",
+      "d3",
+      "Be7",
+      "O-O",
+      "O-O",
+      "Re1",
+      "d6",
+      "c3",
+      "Na5",
+      "Bb5",
+      "a6",
+      "Ba4",
+      "b5",
+      "Bc2"
+     ],
+     "comments": {
+      "7": "Deckt e4 und vermeidet scharfe Varianten.",
+      "13": "Wie im Giuoco: Vorbereitung von d4.",
+      "15": "Der Läufer weicht aus und kehrt über a4 nach c2 zurück.",
+      "19": "Vom Feld c2 aus zielt der Läufer auf den Königsflügel."
+     }
+    },
+    {
+     "name": "Ungarische Verteidigung (3…Le7)",
+     "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bc4",
+      "Be7",
+      "d4",
+      "exd4",
+      "Nxd4",
+      "Nf6",
+      "Nc3",
+      "O-O",
+      "O-O",
+      "d6",
+      "h3",
+      "Re8",
+      "Re1",
+      "Bf8",
+      "Bf4"
+     ],
+     "comments": {
+      "7": "Gegen das passive …Le7 öffnet Weiß sofort das Zentrum.",
+      "9": "Zurückschlagen mit dem Springer: Weiß hat freies Figurenspiel.",
+      "15": "Nimmt dem Läufer c8 das Feld g4.",
+      "19": "Entwickelt die letzte Leichtfigur auf ein aktives Feld."
+     }
+    }
+   ]
+  },
+  {
+   "id": "spanisch",
+   "name": "Spanische Partie",
+   "side": "w",
+   "eco": "C60–C99",
+   "group": "1.e4 e5",
+   "idea": "Der Läufer auf b5 greift den Springer c6 an, der e5 verteidigt. Weiß setzt so dauerhaft Druck auf das schwarze Zentrum. Eine der ältesten und angesehensten Eröffnungen mit klaren strategischen Plänen.",
+   "lines": [
+    {
+     "name": "Geschlossene Variante (Tschigorin)",
+     "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bb5",
+      "a6",
+      "Ba4",
+      "Nf6",
+      "O-O",
+      "Be7",
+      "Re1",
+      "b5",
+      "Bb3",
+      "d6",
+      "c3",
+      "O-O",
+      "h3",
+      "Na5",
+      "Bc2"
+     ],
+     "comments": {
+      "5": "Greift den Verteidiger von e5 an.",
+      "7": "Hält die Fesselung aufrecht, statt den Läufer zu tauschen.",
+      "9": "e4 hängt nur scheinbar: Weiß gewinnt den Bauern meist zurück.",
+      "11": "Deckt e4 endgültig.",
+      "15": "Schafft dem Läufer einen Rückzug nach c2 und bereitet d4 vor.",
+      "17": "Verhindert …Lg4 und sichert d4 vor.",
+      "19": "Der Läufer bleibt auf der starken Diagonale b1–h7."
+     }
+    },
+    {
+     "name": "Berliner Verteidigung",
+     "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bb5",
+      "Nf6",
+      "O-O",
+      "Nxe4",
+      "d4",
+      "Nd6",
+      "Bxc6",
+      "dxc6",
+      "dxe5",
+      "Nf5",
+      "Qxd8+",
+      "Kxd8",
+      "Nc3",
+      "Ke8",
+      "h3"
+     ],
+     "comments": {
+      "7": "Einfach rochieren, der Bauer e4 ist nur scheinbar verloren.",
+      "9": "Öffnet das Zentrum, solange der schwarze König in der Mitte steht.",
+      "13": "Der Springer d6 muss weichen.",
+      "15": "Damentausch: das berühmte Berliner Endspiel.",
+      "19": "Nimmt dem Springer f5 das Feld g4 und bereitet g4 vor."
+     }
+    },
+    {
+     "name": "Marshall-Angriff (8…d5)",
+     "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bb5",
+      "a6",
+      "Ba4",
+      "Nf6",
+      "O-O",
+      "Be7",
+      "Re1",
+      "b5",
+      "Bb3",
+      "O-O",
+      "c3",
+      "d5",
+      "exd5",
+      "Nxd5",
+      "Nxe5"
+     ],
+     "comments": {
+      "15": "Achtung: Jetzt kann Schwarz das Marshall-Gambit spielen.",
+      "17": "Weiß nimmt den angebotenen Bauern.",
+      "19": "Weiß ist einen Bauern vorne, muss aber genau verteidigen."
+     }
+    }
+   ]
+  },
+  {
+   "id": "schottisch",
+   "name": "Schottische Partie",
+   "side": "w",
+   "eco": "C44–C45",
+   "group": "1.e4 e5",
+   "idea": "Mit 3.d4 öffnet Weiß sofort das Zentrum. Dadurch entsteht freies Figurenspiel und Weiß behält einen Raumvorteil. Gut für alle, die klare, offene Stellungen mögen.",
+   "lines": [
+    {
+     "name": "Mieses-Variante (4…Sf6)",
+     "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "d4",
+      "exd4",
+      "Nxd4",
+      "Nf6",
+      "Nxc6",
+      "bxc6",
+      "e5",
+      "Qe7",
+      "Qe2",
+      "Nd5",
+      "c4",
+      "Ba6",
+      "b3"
+     ],
+     "comments": {
+      "5": "Sofortiger Angriff auf das Zentrum.",
+      "7": "Der Springer steht zentral auf d4.",
+      "9": "Tauscht, bevor Schwarz Druck auf e4 macht.",
+      "11": "Vertreibt den Springer und gewinnt Raum.",
+      "13": "Fesselt den Bauern e5 nicht an die Deckung, sondern stützt ihn.",
+      "15": "Vertreibt den Springer aus dem Zentrum.",
+      "17": "Deckt c4 und hält die Stellung zusammen."
+     }
+    },
+    {
+     "name": "Klassische Variante (4…Lc5)",
+     "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "d4",
+      "exd4",
+      "Nxd4",
+      "Bc5",
+      "Be3",
+      "Qf6",
+      "c3",
+      "Nge7",
+      "Bc4",
+      "O-O",
+      "O-O",
+      "Bb6",
+      "Nc2"
+     ],
+     "comments": {
+      "9": "Deckt d4 und bietet den Läufer zum Tausch an.",
+      "11": "Der Springer d4 ist nun fest gedeckt.",
+      "17": "Weicht dem Druck auf d4 aus und tauscht nicht ungünstig."
+     }
+    },
+    {
+     "name": "Früher Springertausch (4…Sxd4)",
+     "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "d4",
+      "exd4",
+      "Nxd4",
+      "Nxd4",
+      "Qxd4",
+      "d6",
+      "Bc4",
+      "Nf6",
+      "Nc3",
+      "Be7",
+      "O-O",
+      "O-O",
+      "Bf4"
+     ],
+     "comments": {
+      "9": "Die Dame steht zentral und kann nicht leicht vertrieben werden.",
+      "17": "Weiß ist besser entwickelt und hat mehr Raum."
+     }
+    }
+   ]
+  },
+  {
+   "id": "evans",
+   "name": "Evans-Gambit",
+   "side": "w",
+   "eco": "C51–C52",
+   "group": "1.e4 e5",
+   "idea": "Weiß opfert den b-Bauern, um mit Tempo c3 und d4 zu spielen und schnell anzugreifen. Ein aktives Gambit aus der Italienischen Partie. Gut, um Angriff und Entwicklungsvorsprung zu üben.",
+   "lines": [
+    {
+     "name": "Angenommen (5…La5)",
+     "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bc4",
+      "Bc5",
+      "b4",
+      "Bxb4",
+      "c3",
+      "Ba5",
+      "d4",
+      "d6",
+      "Qb3",
+      "Qd7",
+      "dxe5",
+      "Bb6",
+      "Nbd2"
+     ],
+     "comments": {
+      "7": "Das Gambit: Weiß opfert einen Bauern für Zeit.",
+      "9": "Mit Tempo gegen den Läufer: d4 wird vorbereitet.",
+      "11": "Weiß baut ein großes Zentrum auf.",
+      "13": "Doppelangriff auf f7 zusammen mit dem Läufer c4.",
+      "15": "Öffnet Linien für die weißen Figuren.",
+      "17": "Entwickelt und deckt den Bauern e5 indirekt."
+     }
+    },
+    {
+     "name": "Angenommen (5…Le7)",
+     "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bc4",
+      "Bc5",
+      "b4",
+      "Bxb4",
+      "c3",
+      "Be7",
+      "d4",
+      "Na5",
+      "Be2",
+      "exd4",
+      "Qxd4",
+      "Nf6",
+      "e5",
+      "Nc6",
+      "Qh4"
+     ],
+     "comments": {
+      "11": "Wieder der Zentrumsvorstoß.",
+      "13": "Der Läufer weicht dem Springer aus.",
+      "15": "Die Dame erobert den Bauern zurück.",
+      "17": "Vertreibt den Springer mit Tempo.",
+      "19": "Die Dame bleibt aktiv am Königsflügel."
+     }
+    },
+    {
+     "name": "Abgelehnt (4…Lb6)",
+     "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bc4",
+      "Bc5",
+      "b4",
+      "Bb6",
+      "a4",
+      "a6",
+      "Nc3",
+      "Nf6",
+      "Nd5",
+      "Nxd5",
+      "exd5",
+      "Nd4",
+      "a5",
+      "Ba7",
+      "d6"
+     ],
+     "comments": {
+      "9": "Droht a5 und den Läufer zu fangen.",
+      "13": "Der Springer springt auf ein starkes Zentrumsfeld.",
+      "19": "Ein bekannter Durchbruch, der Linien öffnet."
+     }
+    }
+   ]
+  },
+  {
+   "id": "wiener",
+   "name": "Wiener Partie",
+   "side": "w",
+   "eco": "C25–C29",
+   "group": "1.e4 e5",
+   "idea": "Weiß entwickelt zuerst den Damenspringer nach c3 und hält sich den Vorstoß f4 offen. So kann Weiß wie im Königsgambit angreifen, aber besser vorbereitet. Flexibel und angriffslustig.",
+   "lines": [
+    {
+     "name": "Wiener Gambit (2…Sf6 3.f4)",
+     "moves": [
+      "e4",
+      "e5",
+      "Nc3",
+      "Nf6",
+      "f4",
+      "d5",
+      "fxe5",
+      "Nxe4",
+      "Nf3",
+      "Be7",
+      "d4",
+      "O-O",
+      "Bd3",
+      "f5",
+      "exf6",
+      "Bxf6",
+      "O-O"
+     ],
+     "comments": {
+      "3": "Deckt e4 und bereitet f4 vor.",
+      "5": "Greift sofort e5 an.",
+      "6": "Schwarz kontert im Zentrum.",
+      "9": "Deckt e5 und entwickelt.",
+      "13": "Der Läufer greift den Springer e4 an.",
+      "15": "Schlagen en passant öffnet die f-Linie.",
+      "17": "Der Turm steht nun auf der offenen f-Linie."
+     }
+    },
+    {
+     "name": "2…Lc5",
+     "moves": [
+      "e4",
+      "e5",
+      "Nc3",
+      "Bc5",
+      "Nf3",
+      "d6",
+      "d4",
+      "exd4",
+      "Nxd4",
+      "Nf6",
+      "Be2",
+      "O-O",
+      "O-O",
+      "Re8",
+      "Bg5",
+      "h6",
+      "Bh4"
+     ],
+     "comments": {
+      "5": "Greift e5 an.",
+      "7": "Öffnet das Zentrum mit Tempo gegen den Läufer.",
+      "15": "Fesselt den Springer f6.",
+      "17": "Hält die Fesselung aufrecht."
+     }
+    },
+    {
+     "name": "Mieses-Aufbau (2…Sc6 3.g3)",
+     "moves": [
+      "e4",
+      "e5",
+      "Nc3",
+      "Nc6",
+      "g3",
+      "Bc5",
+      "Bg2",
+      "d6",
+      "Nge2",
+      "Nf6",
+      "d3",
+      "a6",
+      "O-O",
+      "O-O",
+      "h3",
+      "Be6",
+      "Nd5"
+     ],
+     "comments": {
+      "5": "Ruhiger Aufbau mit Läufer-Fianchetto.",
+      "9": "Der Springer auf e2 hält f4 frei.",
+      "15": "Nimmt dem Läufer das Feld g4.",
+      "17": "Der Springer steht stark im Zentrum."
+     }
+    }
+   ]
+  },
+  {
+   "id": "koenigsgambit",
+   "name": "Königsgambit",
+   "side": "w",
+   "eco": "C30–C39",
+   "group": "1.e4 e5",
+   "idea": "Weiß opfert den f-Bauern, um das schwarze Zentrum zu zerstören und die f-Linie zu öffnen. Eine der romantischsten und schärfsten Eröffnungen. Gut, um Angriffsschach und Initiative zu lernen.",
+   "lines": [
+    {
+     "name": "Kieseritzky (3…g5 4.h4)",
+     "moves": [
+      "e4",
+      "e5",
+      "f4",
+      "exf4",
+      "Nf3",
+      "g5",
+      "h4",
+      "g4",
+      "Ne5",
+      "Nf6",
+      "d4",
+      "d6",
+      "Nd3",
+      "Nxe4",
+      "Bxf4",
+      "Bg7",
+      "c3"
+     ],
+     "comments": {
+      "3": "Das Gambit: der f-Bauer wird geopfert.",
+      "5": "Verhindert …Dh4+.",
+      "7": "Greift die Bauernkette sofort an.",
+      "9": "Der Springer springt aktiv ins Zentrum.",
+      "15": "Weiß hat den Bauern zurück und ist gut entwickelt.",
+      "17": "Festigt d4 gegen den Läufer g7."
+     }
+    },
+    {
+     "name": "Moderne Verteidigung (3…d5)",
+     "moves": [
+      "e4",
+      "e5",
+      "f4",
+      "exf4",
+      "Nf3",
+      "d5",
+      "exd5",
+      "Nf6",
+      "Bc4",
+      "Nxd5",
+      "O-O",
+      "Be7",
+      "Bxd5",
+      "Qxd5",
+      "Nc3",
+      "Qd8",
+      "d4"
+     ],
+     "comments": {
+      "7": "Nimmt den Zentrumsbauern.",
+      "11": "Rochade, die f-Linie wird nützlich.",
+      "15": "Entwickelt mit Tempo gegen die Dame.",
+      "17": "Weiß hat ein schönes Zentrum."
+     }
+    },
+    {
+     "name": "Abgelehnt (2…Lc5)",
+     "moves": [
+      "e4",
+      "e5",
+      "f4",
+      "Bc5",
+      "Nf3",
+      "d6",
+      "Nc3",
+      "Nf6",
+      "Bc4",
+      "Nc6",
+      "d3",
+      "Bg4",
+      "h3",
+      "Bxf3",
+      "Qxf3",
+      "Nd4",
+      "Qg3"
+     ],
+     "comments": {
+      "4": "Der Läufer verhindert die kurze Rochade von Weiß.",
+      "13": "Fragt den Läufer.",
+      "17": "Die Dame weicht aus und greift g7 an."
+     }
+    }
+   ]
+  },
+  {
+   "id": "vierspringer",
+   "name": "Vierspringerspiel (Spanisch)",
+   "side": "w",
+   "eco": "C47–C49",
+   "group": "1.e4 e5",
+   "idea": "Beide Seiten entwickeln zuerst die Springer. Mit 4.Lb5 bringt Weiß spanische Ideen ins Spiel. Solide, klassisch und leicht zu verstehen.",
+   "lines": [
+    {
+     "name": "Symmetrisch (4…Lb4)",
+     "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Nc3",
+      "Nf6",
+      "Bb5",
+      "Bb4",
+      "O-O",
+      "O-O",
+      "d3",
+      "d6",
+      "Bg5",
+      "Bxc3",
+      "bxc3",
+      "Qe7",
+      "Re1",
+      "Nd8",
+      "d4"
+     ],
+     "comments": {
+      "7": "Spanischer Druck auf den Springer c6.",
+      "11": "Festigt e4.",
+      "13": "Fesselt den Springer f6.",
+      "15": "Weiß erhält das Läuferpaar und eine halboffene b-Linie.",
+      "19": "Öffnet das Zentrum für das Läuferpaar."
+     }
+    },
+    {
+     "name": "Rubinstein (4…Sd4)",
+     "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Nc3",
+      "Nf6",
+      "Bb5",
+      "Nd4",
+      "Ba4",
+      "Bc5",
+      "Nxe5",
+      "O-O",
+      "Nd3",
+      "Bb6",
+      "e5",
+      "Ne8",
+      "Nd5",
+      "d6",
+      "Ne3"
+     ],
+     "comments": {
+      "9": "Der Läufer bleibt auf der Diagonale.",
+      "11": "Weiß nimmt den Bauern.",
+      "13": "Der Springer zieht sich zurück und greift den Läufer an.",
+      "15": "Vertreibt den Springer f6.",
+      "19": "Der Springer deckt wichtige Felder um den König."
+     }
+    },
+    {
+     "name": "4…a6",
+     "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Nc3",
+      "Nf6",
+      "Bb5",
+      "a6",
+      "Bxc6",
+      "dxc6",
+      "Nxe5",
+      "Nxe4",
+      "Nxe4",
+      "Qd4",
+      "O-O",
+      "Qxe5",
+      "Re1"
+     ],
+     "comments": {
+      "9": "Tauscht und gewinnt danach den Bauern e5.",
+      "15": "Weiß gibt die Figur zurück und bekommt Entwicklung.",
+      "17": "Mit Tempo gegen die Dame."
+     }
+    }
+   ]
+  },
+  {
+   "id": "damengambit-w",
+   "name": "Damengambit",
+   "side": "w",
+   "eco": "D06–D69",
+   "group": "1.d4 d5",
+   "idea": "Weiß bietet den c-Bauern an, um den schwarzen d-Bauern vom Zentrum wegzulocken. Nimmt Schwarz, holt Weiß den Bauern meist leicht zurück. Ein solides, strategisches Fundament für jedes Repertoire.",
+   "lines": [
+    {
+     "name": "Abgelehnt: Tartakower (2…e6)",
+     "moves": [
+      "d4",
+      "d5",
+      "c4",
+      "e6",
+      "Nc3",
+      "Nf6",
+      "Bg5",
+      "Be7",
+      "e3",
+      "O-O",
+      "Nf3",
+      "h6",
+      "Bh4",
+      "b6",
+      "cxd5",
+      "Nxd5",
+      "Bxe7",
+      "Qxe7",
+      "Nxd5"
+     ],
+     "comments": {
+      "1": "Besetzt das Zentrum; d4 ist von der Dame gedeckt.",
+      "3": "Das Gambit: Druck auf d5.",
+      "5": "Erhöht den Druck auf d5.",
+      "7": "Fesselt den Springer, der d5 verteidigt.",
+      "15": "Klärt die Zentrumsspannung.",
+      "19": "Vereinfacht in eine ausgeglichene, ruhige Stellung."
+     }
+    },
+    {
+     "name": "Angenommen (2…dxc4)",
+     "moves": [
+      "d4",
+      "d5",
+      "c4",
+      "dxc4",
+      "Nf3",
+      "Nf6",
+      "e3",
+      "e6",
+      "Bxc4",
+      "c5",
+      "O-O",
+      "a6",
+      "dxc5",
+      "Bxc5",
+      "Qxd8+",
+      "Kxd8",
+      "Be2"
+     ],
+     "comments": {
+      "5": "Verhindert …e5.",
+      "7": "Öffnet den Läufer, um c4 zurückzugewinnen.",
+      "9": "Der Bauer ist zurück.",
+      "13": "Öffnet die d-Linie.",
+      "17": "Ein ruhiges Endspiel mit kleinem weißen Vorteil."
+     }
+    },
+    {
+     "name": "Slawisch (2…c6)",
+     "moves": [
+      "d4",
+      "d5",
+      "c4",
+      "c6",
+      "Nf3",
+      "Nf6",
+      "Nc3",
+      "dxc4",
+      "a4",
+      "Bf5",
+      "e3",
+      "e6",
+      "Bxc4",
+      "Bb4",
+      "O-O",
+      "O-O",
+      "Qe2",
+      "Nbd7",
+      "e4"
+     ],
+     "comments": {
+      "9": "Verhindert …b5, das den Bauern c4 festhalten würde.",
+      "13": "Der Bauer ist zurück.",
+      "17": "Bereitet e4 vor.",
+      "19": "Weiß gewinnt das Zentrum."
+     }
+    }
+   ]
+  },
+  {
+   "id": "londoner",
+   "name": "Londoner System",
+   "side": "w",
+   "eco": "D02 / A46",
+   "group": "1.d4",
+   "idea": "Weiß baut fast immer dasselbe auf: d4, Lf4, e3, c3, Sf3, Sbd2 und Ld3. Dadurch muss man wenig Theorie lernen. Sehr beliebt bei Einsteigern und Vereinsspielern.",
+   "lines": [
+    {
+     "name": "Gegen …d5 und …e6",
+     "moves": [
+      "d4",
+      "d5",
+      "Bf4",
+      "Nf6",
+      "e3",
+      "e6",
+      "Nf3",
+      "c5",
+      "c3",
+      "Nc6",
+      "Nbd2",
+      "Bd6",
+      "Bg3",
+      "O-O",
+      "Bd3",
+      "b6",
+      "Ne5"
+     ],
+     "comments": {
+      "3": "Der Läufer kommt vor e3 heraus.",
+      "9": "Stützt d4 gegen den Druck von c5.",
+      "13": "Tauscht nicht, sondern weicht aus und behält die Struktur.",
+      "17": "Der Springer besetzt das Vorposten-Feld e5."
+     }
+    },
+    {
+     "name": "Gegen Königsindisch",
+     "moves": [
+      "d4",
+      "Nf6",
+      "Bf4",
+      "g6",
+      "e3",
+      "Bg7",
+      "Nf3",
+      "O-O",
+      "Be2",
+      "d6",
+      "h3",
+      "c5",
+      "c3",
+      "Nc6",
+      "O-O",
+      "Qb6",
+      "Qb3"
+     ],
+     "comments": {
+      "3": "Das gleiche System auch gegen …Sf6.",
+      "9": "Gegen …g6 steht der Läufer auf e2 sicherer.",
+      "11": "Gibt dem Läufer f4 ein Rückzugsfeld auf h2.",
+      "17": "Bietet den Damentausch an und deckt b2."
+     }
+    },
+    {
+     "name": "Gegen frühes …c5",
+     "moves": [
+      "d4",
+      "d5",
+      "Bf4",
+      "c5",
+      "e3",
+      "Nc6",
+      "c3",
+      "Qb6",
+      "Qb3",
+      "c4",
+      "Qc2",
+      "Bf5",
+      "Qc1",
+      "e6",
+      "Nf3",
+      "Nf6",
+      "Nbd2"
+     ],
+     "comments": {
+      "9": "Deckt b2 und bietet Damentausch.",
+      "13": "Die Dame weicht dem Läufer aus und deckt b2.",
+      "17": "Entwickelt und bereitet e4 vor."
+     }
+    }
+   ]
+  },
+  {
+   "id": "katalanisch",
+   "name": "Katalanisch",
+   "side": "w",
+   "eco": "E01–E09",
+   "group": "1.d4 d5",
+   "idea": "Eine Mischung aus Damengambit und Läufer-Fianchetto auf g2. Der Läufer drückt über die lange Diagonale auf b7 und den Damenflügel. Positionell und bei Großmeistern sehr beliebt.",
+   "lines": [
+    {
+     "name": "Offen (4…dxc4)",
+     "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "e6",
+      "g3",
+      "d5",
+      "Bg2",
+      "dxc4",
+      "Nf3",
+      "Be7",
+      "O-O",
+      "O-O",
+      "Qc2",
+      "a6",
+      "Qxc4",
+      "b5",
+      "Qc2",
+      "Bb7",
+      "Bd2"
+     ],
+     "comments": {
+      "5": "Vorbereitung für das Fianchetto.",
+      "7": "Der Läufer zielt auf die lange Diagonale.",
+      "13": "Holt den Bauern c4 zurück.",
+      "19": "Entwickelt den Damenläufer."
+     }
+    },
+    {
+     "name": "Geschlossen (4…Le7)",
+     "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "e6",
+      "g3",
+      "d5",
+      "Bg2",
+      "Be7",
+      "Nf3",
+      "O-O",
+      "O-O",
+      "Nbd7",
+      "Qc2",
+      "c6",
+      "Nbd2",
+      "b6",
+      "e4"
+     ],
+     "comments": {
+      "15": "Unterstützt den Vorstoß e4.",
+      "17": "Weiß gewinnt Raum im Zentrum."
+     }
+    },
+    {
+     "name": "4…Lb4+",
+     "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "e6",
+      "g3",
+      "d5",
+      "Bg2",
+      "Bb4+",
+      "Bd2",
+      "Be7",
+      "Nf3",
+      "O-O",
+      "O-O",
+      "c6",
+      "Qc2",
+      "Nbd7",
+      "Bf4"
+     ],
+     "comments": {
+      "9": "Blockt das Schach mit Entwicklung.",
+      "17": "Der Läufer findet ein aktiveres Feld."
+     }
+    }
+   ]
+  },
+  {
+   "id": "englisch",
+   "name": "Englische Eröffnung",
+   "side": "w",
+   "eco": "A10–A39",
+   "group": "1.c4",
+   "idea": "Weiß kontrolliert das Feld d5 vom Flügel aus, statt das Zentrum direkt zu besetzen. Oft folgt ein Fianchetto mit g3 und Lg2. Flexibel und positionell.",
+   "lines": [
+    {
+     "name": "Gegen 1…e5 (umgekehrtes Sizilianisch)",
+     "moves": [
+      "c4",
+      "e5",
+      "Nc3",
+      "Nf6",
+      "Nf3",
+      "Nc6",
+      "g3",
+      "d5",
+      "cxd5",
+      "Nxd5",
+      "Bg2",
+      "Nb6",
+      "O-O",
+      "Be7",
+      "d3",
+      "O-O",
+      "a3",
+      "Be6",
+      "b4"
+     ],
+     "comments": {
+      "1": "Kontrolliert d5 vom Flügel aus.",
+      "7": "Fianchetto vorbereiten.",
+      "11": "Der Läufer drückt auf den Springer d5.",
+      "17": "Bereitet b4 und Raumgewinn am Damenflügel vor."
+     }
+    },
+    {
+     "name": "Symmetrisch (1…c5)",
+     "moves": [
+      "c4",
+      "c5",
+      "Nc3",
+      "Nc6",
+      "g3",
+      "g6",
+      "Bg2",
+      "Bg7",
+      "Nf3",
+      "Nf6",
+      "O-O",
+      "O-O",
+      "d4",
+      "cxd4",
+      "Nxd4",
+      "Nxd4",
+      "Qxd4",
+      "d6",
+      "Qd3"
+     ],
+     "comments": {
+      "13": "Öffnet das Zentrum.",
+      "19": "Die Dame weicht aus und bleibt zentral."
+     }
+    },
+    {
+     "name": "Anglo-Grünfeld (1…Sf6 2.Sc3 d5)",
+     "moves": [
+      "c4",
+      "Nf6",
+      "Nc3",
+      "d5",
+      "cxd5",
+      "Nxd5",
+      "g3",
+      "g6",
+      "Bg2",
+      "Nb6",
+      "Nf3",
+      "Bg7",
+      "O-O",
+      "O-O",
+      "d3",
+      "Nc6",
+      "Be3"
+     ],
+     "comments": {
+      "7": "Der Läufer g2 wird den Springer d5 unter Druck setzen.",
+      "17": "Entwickelt und greift den Springer b6 indirekt an."
+     }
+    }
+   ]
+  },
+  {
+   "id": "reti",
+   "name": "Réti-Eröffnung",
+   "side": "w",
+   "eco": "A04–A09",
+   "group": "1.Sf3",
+   "idea": "Weiß beginnt mit dem Springer und greift das Zentrum später mit c4 an. Die Läufer werden oft auf g2 und b2 fianchettiert. Sehr flexibel: Weiß bestimmt den Charakter der Partie.",
+   "lines": [
+    {
+     "name": "2…e6",
+     "moves": [
+      "Nf3",
+      "d5",
+      "c4",
+      "e6",
+      "g3",
+      "Nf6",
+      "Bg2",
+      "Be7",
+      "O-O",
+      "O-O",
+      "b3",
+      "c5",
+      "Bb2",
+      "Nc6",
+      "e3",
+      "b6",
+      "Nc3"
+     ],
+     "comments": {
+      "1": "Flexibler Start, kontrolliert e5 und d4.",
+      "3": "Angriff auf d5 vom Flügel.",
+      "11": "Doppeltes Fianchetto vorbereiten."
+     }
+    },
+    {
+     "name": "2…d4",
+     "moves": [
+      "Nf3",
+      "d5",
+      "c4",
+      "d4",
+      "g3",
+      "Nc6",
+      "Bg2",
+      "e5",
+      "d3",
+      "Nf6",
+      "O-O",
+      "a5",
+      "Na3",
+      "Be7",
+      "Nc2",
+      "O-O",
+      "e3"
+     ],
+     "comments": {
+      "4": "Schwarz gewinnt Raum.",
+      "13": "Der Springer geht über c2 aktiv ins Spiel.",
+      "17": "Greift die Spitze d4 an."
+     }
+    },
+    {
+     "name": "2…dxc4",
+     "moves": [
+      "Nf3",
+      "d5",
+      "c4",
+      "dxc4",
+      "e3",
+      "Nf6",
+      "Bxc4",
+      "e6",
+      "O-O",
+      "c5",
+      "b3",
+      "Nc6",
+      "Bb2",
+      "a6",
+      "a4",
+      "Be7",
+      "d4"
+     ],
+     "comments": {
+      "5": "Holt den Bauern bequem zurück.",
+      "15": "Verhindert …b5."
+     }
+    }
+   ]
+  },
+  {
+   "id": "morra",
+   "name": "Smith-Morra-Gambit",
+   "side": "w",
+   "eco": "B21",
+   "group": "1.e4 c5",
+   "idea": "Gegen Sizilianisch opfert Weiß einen Bauern für schnelle Entwicklung und offene Linien. Weiß spielt mit Figuren auf c- und d-Linie gegen den schwarzen König im Zentrum. Ein gefährliches Angriffsgambit.",
+   "lines": [
+    {
+     "name": "Hauptvariante",
+     "moves": [
+      "e4",
+      "c5",
+      "d4",
+      "cxd4",
+      "c3",
+      "dxc3",
+      "Nxc3",
+      "Nc6",
+      "Nf3",
+      "d6",
+      "Bc4",
+      "e6",
+      "O-O",
+      "Nf6",
+      "Qe2",
+      "Be7",
+      "Rd1",
+      "e5",
+      "h3"
+     ],
+     "comments": {
+      "3": "Öffnet sofort das Zentrum.",
+      "5": "Das Gambit.",
+      "7": "Weiß hat schnelle Entwicklung für den Bauern.",
+      "11": "Der Läufer zielt auf f7.",
+      "15": "Bereitet Td1 und den Durchbruch e5 vor.",
+      "17": "Der Turm drückt auf den rückständigen Bauern d6.",
+      "19": "Verhindert …Lg4."
+     }
+    },
+    {
+     "name": "Mit …e6 und …a6",
+     "moves": [
+      "e4",
+      "c5",
+      "d4",
+      "cxd4",
+      "c3",
+      "dxc3",
+      "Nxc3",
+      "Nc6",
+      "Nf3",
+      "e6",
+      "Bc4",
+      "a6",
+      "O-O",
+      "Nge7",
+      "Bg5",
+      "h6",
+      "Be3"
+     ],
+     "comments": {
+      "14": "Der Springer will nach g6.",
+      "15": "Greift den Springer mit Tempo an.",
+      "17": "Der Läufer zielt auf den Damenflügel."
+     }
+    },
+    {
+     "name": "Mit …d6 und …a6",
+     "moves": [
+      "e4",
+      "c5",
+      "d4",
+      "cxd4",
+      "c3",
+      "dxc3",
+      "Nxc3",
+      "Nc6",
+      "Nf3",
+      "d6",
+      "Bc4",
+      "a6",
+      "O-O",
+      "Nf6",
+      "Qe2",
+      "Bg4",
+      "Rd1",
+      "e6",
+      "h3"
+     ],
+     "comments": {
+      "17": "Der Turm besetzt die halboffene d-Linie.",
+      "19": "Fragt den Läufer."
+     }
+    }
+   ]
+  },
+  {
+   "id": "alapin",
+   "name": "Alapin-Variante (2.c3)",
+   "side": "w",
+   "eco": "B22",
+   "group": "1.e4 c5",
+   "idea": "Weiß bereitet mit c3 den Vorstoß d4 vor, um ein großes Zentrum zu bauen. So vermeidet Weiß die schwere Theorie der offenen Sizilianer. Solide und gut für Einsteiger.",
+   "lines": [
+    {
+     "name": "2…d5",
+     "moves": [
+      "e4",
+      "c5",
+      "c3",
+      "d5",
+      "exd5",
+      "Qxd5",
+      "d4",
+      "Nf6",
+      "Nf3",
+      "e6",
+      "Be2",
+      "Nc6",
+      "O-O",
+      "cxd4",
+      "cxd4",
+      "Be7",
+      "Nc3"
+     ],
+     "comments": {
+      "3": "Bereitet d4 vor.",
+      "7": "Weiß baut das Zentrum auf.",
+      "15": "Weiß hat einen isolierten, aber aktiven d-Bauern.",
+      "17": "Entwickelt mit Tempo gegen die Dame."
+     }
+    },
+    {
+     "name": "2…Sf6",
+     "moves": [
+      "e4",
+      "c5",
+      "c3",
+      "Nf6",
+      "e5",
+      "Nd5",
+      "d4",
+      "cxd4",
+      "Nf3",
+      "Nc6",
+      "Bc4",
+      "Nb6",
+      "Bb3",
+      "d5",
+      "exd6",
+      "Qxd6",
+      "O-O",
+      "Be6",
+      "Bxe6"
+     ],
+     "comments": {
+      "5": "Vertreibt den Springer.",
+      "11": "Greift den Springer d5 an.",
+      "19": "Tauscht den aktiven Läufer."
+     }
+    },
+    {
+     "name": "2…e6",
+     "moves": [
+      "e4",
+      "c5",
+      "c3",
+      "e6",
+      "d4",
+      "d5",
+      "exd5",
+      "exd5",
+      "Nf3",
+      "Nc6",
+      "Be2",
+      "Bd6",
+      "dxc5",
+      "Bxc5",
+      "O-O",
+      "Nge7",
+      "Nbd2",
+      "O-O",
+      "Nb3"
+     ],
+     "comments": {
+      "19": "Greift den Läufer an und kontrolliert d4."
+     }
+    }
+   ]
+  },
+  {
+   "id": "najdorf",
+   "name": "Sizilianisch: Najdorf",
+   "side": "b",
+   "eco": "B90–B99",
+   "group": "1.e4 c5",
+   "idea": "Schwarz spielt …a6, um das Feld b5 zu kontrollieren und …e5 oder …e6 vorzubereiten. Die Stellung ist unausgeglichen und reich an Chancen für beide Seiten. Die Lieblingswaffe von Fischer und Kasparov.",
+   "lines": [
+    {
+     "name": "Englischer Angriff (6.Le3)",
+     "moves": [
+      "e4",
+      "c5",
+      "Nf3",
+      "d6",
+      "d4",
+      "cxd4",
+      "Nxd4",
+      "Nf6",
+      "Nc3",
+      "a6",
+      "Be3",
+      "e5",
+      "Nb3",
+      "Be6",
+      "f3",
+      "Be7",
+      "Qd2",
+      "O-O",
+      "O-O-O",
+      "Nbd7"
+     ],
+     "comments": {
+      "2": "Kämpft asymmetrisch um d4.",
+      "6": "Tauscht einen Flügelbauern gegen einen Zentrumsbauern.",
+      "8": "Greift e4 an.",
+      "10": "Der Najdorf-Zug: kontrolliert b5.",
+      "12": "Vertreibt den Springer aus dem Zentrum.",
+      "14": "Kontrolliert d5.",
+      "20": "Bereitet …b5 und Angriff am Damenflügel vor."
+     }
+    },
+    {
+     "name": "6.Lg5",
+     "moves": [
+      "e4",
+      "c5",
+      "Nf3",
+      "d6",
+      "d4",
+      "cxd4",
+      "Nxd4",
+      "Nf6",
+      "Nc3",
+      "a6",
+      "Bg5",
+      "e6",
+      "f4",
+      "Be7",
+      "Qf3",
+      "Qc7",
+      "O-O-O",
+      "Nbd7",
+      "g4",
+      "b5"
+     ],
+     "comments": {
+      "12": "Hält die Stellung fest und öffnet den Läufer f8.",
+      "16": "Die Dame steht gut auf der c-Linie.",
+      "20": "Gegenangriff am Damenflügel."
+     }
+    },
+    {
+     "name": "6.Le2",
+     "moves": [
+      "e4",
+      "c5",
+      "Nf3",
+      "d6",
+      "d4",
+      "cxd4",
+      "Nxd4",
+      "Nf6",
+      "Nc3",
+      "a6",
+      "Be2",
+      "e5",
+      "Nb3",
+      "Be7",
+      "O-O",
+      "O-O",
+      "Be3",
+      "Be6",
+      "Qd2",
+      "Nbd7"
+     ],
+     "comments": {
+      "12": "Gewinnt Raum mit Tempo.",
+      "20": "Der Springer deckt e5 und kann nach b6."
+     }
+    },
+    {
+     "name": "Fischer-Sosin (6.Lc4)",
+     "moves": [
+      "e4",
+      "c5",
+      "Nf3",
+      "d6",
+      "d4",
+      "cxd4",
+      "Nxd4",
+      "Nf6",
+      "Nc3",
+      "a6",
+      "Bc4",
+      "e6",
+      "Bb3",
+      "b5",
+      "O-O",
+      "Be7",
+      "Qf3",
+      "Qc7",
+      "Qg3",
+      "O-O"
+     ],
+     "comments": {
+      "12": "Verkürzt die Diagonale des Läufers c4.",
+      "14": "Gewinnt Raum und droht …b4.",
+      "18": "Deckt den Turm a8 indirekt."
+     }
+    }
+   ]
+  },
+  {
+   "id": "drachen",
+   "name": "Sizilianisch: Drachen",
+   "side": "b",
+   "eco": "B70–B79",
+   "group": "1.e4 c5",
+   "idea": "Schwarz fianchettiert den Läufer nach g7, wo er über die lange Diagonale feuert. Oft greifen beide Seiten auf entgegengesetzten Flügeln an. Scharf und sehr dynamisch.",
+   "lines": [
+    {
+     "name": "Jugoslawischer Angriff (9.Lc4)",
+     "moves": [
+      "e4",
+      "c5",
+      "Nf3",
+      "d6",
+      "d4",
+      "cxd4",
+      "Nxd4",
+      "Nf6",
+      "Nc3",
+      "g6",
+      "Be3",
+      "Bg7",
+      "f3",
+      "O-O",
+      "Qd2",
+      "Nc6",
+      "Bc4",
+      "Bd7",
+      "O-O-O",
+      "Rc8"
+     ],
+     "comments": {
+      "10": "Der Drachenzug.",
+      "12": "Der Läufer auf der langen Diagonale.",
+      "20": "Der Turm kommt auf die offene c-Linie."
+     }
+    },
+    {
+     "name": "Jugoslawischer Angriff (9.0-0-0)",
+     "moves": [
+      "e4",
+      "c5",
+      "Nf3",
+      "d6",
+      "d4",
+      "cxd4",
+      "Nxd4",
+      "Nf6",
+      "Nc3",
+      "g6",
+      "Be3",
+      "Bg7",
+      "f3",
+      "O-O",
+      "Qd2",
+      "Nc6",
+      "O-O-O",
+      "d5",
+      "exd5",
+      "Nxd5"
+     ],
+     "comments": {
+      "18": "Sofortiger Gegenschlag im Zentrum.",
+      "20": "Der Springer steht stark auf d5."
+     }
+    },
+    {
+     "name": "Klassisch (6.Le2)",
+     "moves": [
+      "e4",
+      "c5",
+      "Nf3",
+      "d6",
+      "d4",
+      "cxd4",
+      "Nxd4",
+      "Nf6",
+      "Nc3",
+      "g6",
+      "Be2",
+      "Bg7",
+      "O-O",
+      "O-O",
+      "Be3",
+      "Nc6",
+      "Nb3",
+      "Be6",
+      "f4",
+      "Qc8"
+     ],
+     "comments": {
+      "18": "Kontrolliert d5 und c4.",
+      "20": "Die Dame unterstützt …Lg4 oder …Th8-Ideen."
+     }
+    }
+   ]
+  },
+  {
+   "id": "franzoesisch",
+   "name": "Französisch",
+   "side": "b",
+   "eco": "C00–C19",
+   "group": "1.e4 e6",
+   "idea": "Schwarz baut mit …e6 und …d5 eine feste Bauernkette auf. Der Gegenangriff erfolgt typischerweise mit …c5 gegen die Basis d4. Solide, aber mit klaren Gegenchancen.",
+   "lines": [
+    {
+     "name": "Vorstoß-Variante (3.e5)",
+     "moves": [
+      "e4",
+      "e6",
+      "d4",
+      "d5",
+      "e5",
+      "c5",
+      "c3",
+      "Nc6",
+      "Nf3",
+      "Qb6",
+      "Be2",
+      "cxd4",
+      "cxd4",
+      "Nh6",
+      "Nc3",
+      "Nf5",
+      "Na4",
+      "Qa5+",
+      "Bd2",
+      "Bb4"
+     ],
+     "comments": {
+      "2": "Bereitet …d5 vor.",
+      "4": "Greift e4 an.",
+      "6": "Greift die Basis der weißen Kette an.",
+      "8": "Erhöht den Druck auf d4.",
+      "10": "Die Dame drückt auf d4 und b2.",
+      "14": "Der Springer will über f5 auf d4 drücken.",
+      "20": "Tauscht die Figuren, die d4 verteidigen."
+     }
+    },
+    {
+     "name": "Winawer (3.Sc3 Lb4)",
+     "moves": [
+      "e4",
+      "e6",
+      "d4",
+      "d5",
+      "Nc3",
+      "Bb4",
+      "e5",
+      "c5",
+      "a3",
+      "Bxc3+",
+      "bxc3",
+      "Ne7",
+      "Qg4",
+      "Qc7",
+      "Qxg7",
+      "Rg8",
+      "Qxh7",
+      "cxd4",
+      "Ne2",
+      "Nbc6"
+     ],
+     "comments": {
+      "6": "Fesselt den Springer, der e4 deckt.",
+      "12": "Der Springer deckt g6 und geht nach f5 oder c6.",
+      "14": "Gegenangriff auf c3 statt g7 zu decken.",
+      "18": "Schwarz öffnet Linien gegen den weißen König."
+     }
+    },
+    {
+     "name": "Tarrasch (3.Sd2)",
+     "moves": [
+      "e4",
+      "e6",
+      "d4",
+      "d5",
+      "Nd2",
+      "Nf6",
+      "e5",
+      "Nfd7",
+      "Bd3",
+      "c5",
+      "c3",
+      "Nc6",
+      "Ne2",
+      "cxd4",
+      "cxd4",
+      "f6",
+      "exf6",
+      "Nxf6",
+      "Nf3",
+      "Bd6"
+     ],
+     "comments": {
+      "6": "Greift e4 an.",
+      "10": "Der typische Hebel.",
+      "16": "Der zweite Hebel gegen die Spitze e5.",
+      "20": "Schwarz ist gut entwickelt."
+     }
+    },
+    {
+     "name": "Abtausch-Variante (3.exd5)",
+     "moves": [
+      "e4",
+      "e6",
+      "d4",
+      "d5",
+      "exd5",
+      "exd5",
+      "Nf3",
+      "Nf6",
+      "Bd3",
+      "Bd6",
+      "O-O",
+      "O-O",
+      "Bg5",
+      "Bg4",
+      "Nbd2",
+      "Nbd7",
+      "c3",
+      "c6",
+      "Qc2",
+      "Qc7"
+     ],
+     "comments": {
+      "6": "Symmetrische Struktur, Schwarz hat freies Spiel."
+     }
+    }
+   ]
+  },
+  {
+   "id": "carokann",
+   "name": "Caro-Kann",
+   "side": "b",
+   "eco": "B10–B19",
+   "group": "1.e4 c6",
+   "idea": "Schwarz bereitet …d5 mit …c6 vor und hält die Bauernstruktur gesund. Anders als im Französischen kommt der weißfeldrige Läufer vor …e6 heraus. Sehr solide und bei Einsteigern beliebt.",
+   "lines": [
+    {
+     "name": "Klassisch (4…Lf5)",
+     "moves": [
+      "e4",
+      "c6",
+      "d4",
+      "d5",
+      "Nc3",
+      "dxe4",
+      "Nxe4",
+      "Bf5",
+      "Ng3",
+      "Bg6",
+      "h4",
+      "h6",
+      "Nf3",
+      "Nd7",
+      "h5",
+      "Bh7",
+      "Bd3",
+      "Bxd3",
+      "Qxd3",
+      "e6"
+     ],
+     "comments": {
+      "2": "Bereitet …d5 vor.",
+      "8": "Der Läufer kommt vor …e6 heraus.",
+      "12": "Gibt dem Läufer das Rückzugsfeld h7.",
+      "14": "Verhindert Se5."
+     }
+    },
+    {
+     "name": "Vorstoß-Variante (3.e5)",
+     "moves": [
+      "e4",
+      "c6",
+      "d4",
+      "d5",
+      "e5",
+      "Bf5",
+      "Nf3",
+      "e6",
+      "Be2",
+      "c5",
+      "Be3",
+      "cxd4",
+      "Nxd4",
+      "Ne7",
+      "O-O",
+      "Nbc6",
+      "c3",
+      "Nxd4",
+      "Bxd4",
+      "Nc6"
+     ],
+     "comments": {
+      "6": "Der Läufer kommt vor …e6 heraus.",
+      "10": "Greift die Basis d4 an.",
+      "14": "Der Springer geht nach c6 oder g6.",
+      "20": "Greift den Läufer mit Tempo an."
+     }
+    },
+    {
+     "name": "Panow-Angriff (4.c4)",
+     "moves": [
+      "e4",
+      "c6",
+      "d4",
+      "d5",
+      "exd5",
+      "cxd5",
+      "c4",
+      "Nf6",
+      "Nc3",
+      "e6",
+      "Nf3",
+      "Be7",
+      "cxd5",
+      "Nxd5",
+      "Bd3",
+      "Nc6",
+      "O-O",
+      "O-O",
+      "Re1",
+      "Bf6"
+     ],
+     "comments": {
+      "10": "Schwarz spielt gegen den isolierten Bauern.",
+      "14": "Blockiert den Bauern d4 auf d5.",
+      "20": "Drückt auf d4."
+     }
+    },
+    {
+     "name": "Abtausch-Variante (4.Ld3)",
+     "moves": [
+      "e4",
+      "c6",
+      "d4",
+      "d5",
+      "exd5",
+      "cxd5",
+      "Bd3",
+      "Nc6",
+      "c3",
+      "Nf6",
+      "Bf4",
+      "Bg4",
+      "Qb3",
+      "Qd7",
+      "Nd2",
+      "e6",
+      "Ngf3",
+      "Bd6",
+      "Bxd6",
+      "Qxd6"
+     ],
+     "comments": {
+      "12": "Entwickelt den Läufer aktiv.",
+      "14": "Deckt b7."
+     }
+    }
+   ]
+  },
+  {
+   "id": "skandinavisch",
+   "name": "Skandinavisch",
+   "side": "b",
+   "eco": "B01",
+   "group": "1.e4 d5",
+   "idea": "Schwarz greift e4 sofort mit …d5 an. Nach dem Tausch kommt die Dame früh heraus, findet aber auf a5 ein sicheres Feld. Wenig Theorie und klare Pläne.",
+   "lines": [
+    {
+     "name": "Hauptvariante (8.De2)",
+     "moves": [
+      "e4",
+      "d5",
+      "exd5",
+      "Qxd5",
+      "Nc3",
+      "Qa5",
+      "d4",
+      "Nf6",
+      "Nf3",
+      "c6",
+      "Bc4",
+      "Bf5",
+      "Bd2",
+      "e6",
+      "Qe2",
+      "Bb4",
+      "O-O-O",
+      "Nbd7",
+      "a3",
+      "Bxc3"
+     ],
+     "comments": {
+      "2": "Greift e4 sofort an.",
+      "6": "Die Dame steht sicher und fesselt den Springer.",
+      "10": "Gibt der Dame ein Rückzugsfeld auf c7.",
+      "16": "Fesselt den Springer c3."
+     }
+    },
+    {
+     "name": "Mit 8.Sd5",
+     "moves": [
+      "e4",
+      "d5",
+      "exd5",
+      "Qxd5",
+      "Nc3",
+      "Qa5",
+      "d4",
+      "Nf6",
+      "Nf3",
+      "c6",
+      "Bc4",
+      "Bf5",
+      "Bd2",
+      "e6",
+      "Nd5",
+      "Qd8",
+      "Nxf6+",
+      "Qxf6",
+      "Qe2",
+      "Nd7"
+     ],
+     "comments": {
+      "15": "Ein bekannter Trick: Der Springer greift die Dame an.",
+      "16": "Die Dame zieht sich zurück."
+     }
+    },
+    {
+     "name": "2.e5 (Vorstoß)",
+     "moves": [
+      "e4",
+      "d5",
+      "e5",
+      "Bf5",
+      "d4",
+      "e6",
+      "Nf3",
+      "c5",
+      "c3",
+      "Nc6",
+      "Be2",
+      "Qb6",
+      "O-O",
+      "cxd4",
+      "cxd4",
+      "Nge7",
+      "Nc3",
+      "Ng6",
+      "Na4",
+      "Qa5"
+     ],
+     "comments": {
+      "3": "Weiß weicht dem Tausch aus.",
+      "4": "Der Läufer kommt vor …e6 heraus.",
+      "18": "Der Springer greift den Bauern e5 an."
+     }
+    }
+   ]
+  },
+  {
+   "id": "pirc",
+   "name": "Pirc-Verteidigung",
+   "side": "b",
+   "eco": "B07–B09",
+   "group": "1.e4 d6",
+   "idea": "Schwarz überlässt Weiß zunächst das Zentrum und fianchettiert den Läufer auf g7. Später greift Schwarz das Zentrum mit …e5 oder …c5 an. Eine hypermoderne, flexible Eröffnung.",
+   "lines": [
+    {
+     "name": "Klassisch (4.Sf3)",
+     "moves": [
+      "e4",
+      "d6",
+      "d4",
+      "Nf6",
+      "Nc3",
+      "g6",
+      "Nf3",
+      "Bg7",
+      "Be2",
+      "O-O",
+      "O-O",
+      "c6",
+      "a4",
+      "a5",
+      "h3",
+      "Na6",
+      "Be3",
+      "Nb4",
+      "Qd2",
+      "e6"
+     ],
+     "comments": {
+      "4": "Greift e4 an.",
+      "8": "Der Läufer drückt auf das Zentrum.",
+      "14": "Stoppt den weißen Raumgewinn am Damenflügel.",
+      "18": "Der Springer findet einen sicheren Vorposten."
+     }
+    },
+    {
+     "name": "Österreichischer Angriff (4.f4)",
+     "moves": [
+      "e4",
+      "d6",
+      "d4",
+      "Nf6",
+      "Nc3",
+      "g6",
+      "f4",
+      "Bg7",
+      "Nf3",
+      "O-O",
+      "Bd3",
+      "Na6",
+      "O-O",
+      "c5",
+      "d5",
+      "Rb8",
+      "Qe1",
+      "Nc7",
+      "a4",
+      "a6"
+     ],
+     "comments": {
+      "7": "Weiß baut ein großes Zentrum auf.",
+      "12": "Bereitet …c5 vor.",
+      "14": "Greift das Zentrum an."
+     }
+    },
+    {
+     "name": "150er-Angriff (4.Le3)",
+     "moves": [
+      "e4",
+      "d6",
+      "d4",
+      "Nf6",
+      "Nc3",
+      "g6",
+      "Be3",
+      "c6",
+      "Qd2",
+      "b5",
+      "f3",
+      "Nbd7",
+      "Nh3",
+      "Nb6",
+      "Nf2",
+      "a5",
+      "Bd3",
+      "Ba6",
+      "O-O",
+      "Bg7"
+     ],
+     "comments": {
+      "8": "Bereitet …b5 vor.",
+      "10": "Gegenangriff am Damenflügel."
+     }
+    }
+   ]
+  },
+  {
+   "id": "aljechin",
+   "name": "Aljechin-Verteidigung",
+   "side": "b",
+   "eco": "B02–B05",
+   "group": "1.e4 Sf6",
+   "idea": "Schwarz lockt die weißen Bauern nach vorne, um sie später als Angriffsziele zu nutzen. Weiß bekommt viel Raum, muss das Zentrum aber verteidigen. Provokant und lehrreich.",
+   "lines": [
+    {
+     "name": "Moderne Variante (4.Sf3)",
+     "moves": [
+      "e4",
+      "Nf6",
+      "e5",
+      "Nd5",
+      "d4",
+      "d6",
+      "Nf3",
+      "Bg4",
+      "Be2",
+      "e6",
+      "O-O",
+      "Be7",
+      "h3",
+      "Bh5",
+      "c4",
+      "Nb6",
+      "Nc3",
+      "O-O",
+      "Be3",
+      "d5"
+     ],
+     "comments": {
+      "2": "Greift e4 an und provoziert e5.",
+      "6": "Greift die Spitze e5 an.",
+      "8": "Druck auf den Verteidiger von d4.",
+      "20": "Schließt das Zentrum und nimmt c4 ins Visier."
+     }
+    },
+    {
+     "name": "Abtausch-Variante (5.exd6)",
+     "moves": [
+      "e4",
+      "Nf6",
+      "e5",
+      "Nd5",
+      "d4",
+      "d6",
+      "c4",
+      "Nb6",
+      "exd6",
+      "cxd6",
+      "Nc3",
+      "g6",
+      "Be3",
+      "Bg7",
+      "Rc1",
+      "O-O",
+      "b3",
+      "e5",
+      "dxe5",
+      "dxe5"
+     ],
+     "comments": {
+      "10": "Schlägt zum Zentrum hin.",
+      "14": "Der Läufer drückt auf d4.",
+      "18": "Greift das Zentrum an."
+     }
+    },
+    {
+     "name": "Vierbauern-Angriff (5.f4)",
+     "moves": [
+      "e4",
+      "Nf6",
+      "e5",
+      "Nd5",
+      "d4",
+      "d6",
+      "c4",
+      "Nb6",
+      "f4",
+      "dxe5",
+      "fxe5",
+      "Nc6",
+      "Be3",
+      "Bf5",
+      "Nc3",
+      "e6",
+      "Nf3",
+      "Be7",
+      "d5",
+      "exd5"
+     ],
+     "comments": {
+      "9": "Vier Bauern im Zentrum.",
+      "12": "Greift das überdehnte Zentrum an."
+     }
+    }
+   ]
+  },
+  {
+   "id": "petrow",
+   "name": "Russisch (Petrow)",
+   "side": "b",
+   "eco": "C42–C43",
+   "group": "1.e4 e5",
+   "idea": "Statt e5 zu decken, greift Schwarz mit …Sf6 sofort e4 an. Die Eröffnung ist symmetrisch und sehr solide. Ideal, um gegen 1.e4 sicher auszugleichen.",
+   "lines": [
+    {
+     "name": "Hauptvariante (3.Sxe5)",
+     "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nf6",
+      "Nxe5",
+      "d6",
+      "Nf3",
+      "Nxe4",
+      "d4",
+      "d5",
+      "Bd3",
+      "Nc6",
+      "O-O",
+      "Be7",
+      "c4",
+      "Nb4",
+      "Be2",
+      "O-O",
+      "Nc3",
+      "Bf5"
+     ],
+     "comments": {
+      "4": "Gegenangriff auf e4.",
+      "6": "Wichtig: Erst den Springer vertreiben, nicht sofort …Sxe4.",
+      "8": "Jetzt ist der Bauer zurück.",
+      "10": "Stützt den Springer e4.",
+      "16": "Greift den Läufer d3 an."
+     }
+    },
+    {
+     "name": "5.Sc3",
+     "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nf6",
+      "Nxe5",
+      "d6",
+      "Nf3",
+      "Nxe4",
+      "Nc3",
+      "Nxc3",
+      "dxc3",
+      "Be7",
+      "Be3",
+      "Nc6",
+      "Qd2",
+      "Be6",
+      "O-O-O",
+      "Qd7",
+      "Kb1",
+      "O-O-O"
+     ],
+     "comments": {
+      "9": "Weiß bietet den Springertausch an.",
+      "20": "Beide Könige auf dem Damenflügel."
+     }
+    },
+    {
+     "name": "3.d4",
+     "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nf6",
+      "d4",
+      "Nxe4",
+      "Bd3",
+      "d5",
+      "Nxe5",
+      "Nd7",
+      "Nxd7",
+      "Bxd7",
+      "O-O",
+      "Bd6",
+      "c4",
+      "c6",
+      "cxd5",
+      "cxd5",
+      "Nc3",
+      "Nxc3"
+     ],
+     "comments": {
+      "6": "Nimmt den Bauern sofort.",
+      "10": "Tauscht den starken Springer e5."
+     }
+    }
+   ]
+  },
+  {
+   "id": "zweispringer",
+   "name": "Zweispringerspiel im Nachzug",
+   "side": "b",
+   "eco": "C55–C59",
+   "group": "1.e4 e5",
+   "idea": "Gegen die Italienische Partie greift Schwarz mit …Sf6 sofort e4 an, statt mit …Lc5 zu spiegeln. Das führt zu aktivem, oft scharfem Spiel. Wichtig: die Fallen nach 4.Sg5 kennen.",
+   "lines": [
+    {
+     "name": "4.Sg5 (Hauptvariante)",
+     "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bc4",
+      "Nf6",
+      "Ng5",
+      "d5",
+      "exd5",
+      "Na5",
+      "Bb5+",
+      "c6",
+      "dxc6",
+      "bxc6",
+      "Be2",
+      "h6",
+      "Nf3",
+      "e4",
+      "Ne5",
+      "Bd6"
+     ],
+     "comments": {
+      "6": "Greift e4 an.",
+      "7": "Weiß greift f7 an.",
+      "8": "Blockiert die Diagonale des Läufers.",
+      "10": "Wichtig: nicht …Sxd5, sondern den Läufer angreifen.",
+      "16": "Vertreibt den Springer.",
+      "20": "Schwarz hat Entwicklungsvorsprung für den Bauern."
+     }
+    },
+    {
+     "name": "4.d3 (ruhig)",
+     "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bc4",
+      "Nf6",
+      "d3",
+      "Be7",
+      "O-O",
+      "O-O",
+      "Re1",
+      "d6",
+      "c3",
+      "Na5",
+      "Bb5",
+      "a6",
+      "Ba4",
+      "b5",
+      "Bc2",
+      "c5"
+     ],
+     "comments": {
+      "8": "Ruhige, solide Entwicklung.",
+      "14": "Tauscht später den starken Läufer."
+     }
+    },
+    {
+     "name": "4.d4 (Canal-Variante)",
+     "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bc4",
+      "Nf6",
+      "d4",
+      "exd4",
+      "O-O",
+      "Nxe4",
+      "Re1",
+      "d5",
+      "Bxd5",
+      "Qxd5",
+      "Nc3",
+      "Qa5",
+      "Nxe4",
+      "Be6",
+      "Neg5",
+      "O-O-O"
+     ],
+     "comments": {
+      "10": "Nimmt den Bauern.",
+      "12": "Gibt die Figur zurück und öffnet Linien.",
+      "20": "Der König geht in Sicherheit, der Turm steht auf d8."
+     }
+    },
+    {
+     "name": "4.Sc3 (Gabeltrick)",
+     "moves": [
+      "e4",
+      "e5",
+      "Nf3",
+      "Nc6",
+      "Bc4",
+      "Nf6",
+      "Nc3",
+      "Nxe4",
+      "Nxe4",
+      "d5",
+      "Bd3",
+      "dxe4",
+      "Bxe4",
+      "Bd6",
+      "O-O",
+      "O-O",
+      "d3",
+      "f5",
+      "Bd5+",
+      "Kh8"
+     ],
+     "comments": {
+      "8": "Der Gabeltrick: Schwarz gibt die Figur kurz her.",
+      "10": "Gabel: Läufer und Springer werden angegriffen.",
+      "14": "Schwarz hat ein schönes Zentrum.",
+      "18": "Vertreibt den Läufer mit Tempo."
+     }
+    }
+   ]
+  },
+  {
+   "id": "damengambit-s",
+   "name": "Damengambit abgelehnt",
+   "side": "b",
+   "eco": "D30–D69",
+   "group": "1.d4 d5",
+   "idea": "Schwarz hält mit …e6 den Bauern d5 fest und bleibt im Zentrum stabil. Der Nachteil: Der Läufer c8 ist zunächst eingesperrt. Eine der solidesten Verteidigungen überhaupt.",
+   "lines": [
+    {
+     "name": "Tartakower (4.Lg5)",
+     "moves": [
+      "d4",
+      "d5",
+      "c4",
+      "e6",
+      "Nc3",
+      "Nf6",
+      "Bg5",
+      "Be7",
+      "e3",
+      "O-O",
+      "Nf3",
+      "h6",
+      "Bh4",
+      "b6",
+      "cxd5",
+      "Nxd5",
+      "Bxe7",
+      "Qxe7",
+      "Nxd5",
+      "exd5"
+     ],
+     "comments": {
+      "2": "Besetzt das Zentrum symmetrisch.",
+      "4": "Stützt d5 und öffnet den Läufer f8.",
+      "8": "Hebt die Fesselung auf.",
+      "14": "Der Läufer c8 kommt nach b7.",
+      "16": "Tauscht Figuren, um sich zu befreien."
+     }
+    },
+    {
+     "name": "Abtausch-Variante (4.cxd5)",
+     "moves": [
+      "d4",
+      "d5",
+      "c4",
+      "e6",
+      "Nc3",
+      "Nf6",
+      "cxd5",
+      "exd5",
+      "Bg5",
+      "c6",
+      "e3",
+      "Be7",
+      "Bd3",
+      "Nbd7",
+      "Qc2",
+      "O-O",
+      "Nge2",
+      "Re8",
+      "O-O",
+      "Nf8"
+     ],
+     "comments": {
+      "8": "Öffnet die Diagonale für den Läufer c8.",
+      "20": "Der Springer verteidigt den Königsflügel."
+     }
+    },
+    {
+     "name": "4.Sf3 und 5.Lf4",
+     "moves": [
+      "d4",
+      "d5",
+      "c4",
+      "e6",
+      "Nc3",
+      "Nf6",
+      "Nf3",
+      "Be7",
+      "Bf4",
+      "O-O",
+      "e3",
+      "c5",
+      "dxc5",
+      "Bxc5",
+      "a3",
+      "Nc6",
+      "Qc2",
+      "Qa5",
+      "Rd1",
+      "Re8"
+     ],
+     "comments": {
+      "12": "Greift das Zentrum an.",
+      "18": "Fesselt den Springer c3."
+     }
+    }
+   ]
+  },
+  {
+   "id": "slawisch",
+   "name": "Slawisch",
+   "side": "b",
+   "eco": "D10–D19",
+   "group": "1.d4 d5",
+   "idea": "Schwarz deckt d5 mit …c6 statt …e6, damit der Läufer c8 noch frei herauskommen kann. Sehr solide und mit klarer Struktur. Eine Top-Verteidigung gegen das Damengambit.",
+   "lines": [
+    {
+     "name": "Hauptvariante (5.a4)",
+     "moves": [
+      "d4",
+      "d5",
+      "c4",
+      "c6",
+      "Nf3",
+      "Nf6",
+      "Nc3",
+      "dxc4",
+      "a4",
+      "Bf5",
+      "e3",
+      "e6",
+      "Bxc4",
+      "Bb4",
+      "O-O",
+      "O-O",
+      "Qe2",
+      "Nbd7",
+      "e4",
+      "Bg6"
+     ],
+     "comments": {
+      "4": "Deckt d5, ohne den Läufer einzusperren.",
+      "8": "Schwarz nimmt den Bauern.",
+      "10": "Der Läufer kommt vor …e6 heraus."
+     }
+    },
+    {
+     "name": "Abtausch-Variante (3.cxd5)",
+     "moves": [
+      "d4",
+      "d5",
+      "c4",
+      "c6",
+      "cxd5",
+      "cxd5",
+      "Nc3",
+      "Nf6",
+      "Bf4",
+      "Nc6",
+      "e3",
+      "Bf5",
+      "Nf3",
+      "e6",
+      "Bb5",
+      "Nd7",
+      "Qa4",
+      "Rc8",
+      "O-O",
+      "a6"
+     ],
+     "comments": {
+      "12": "Symmetrisch, aber solide."
+     }
+    },
+    {
+     "name": "4.e3",
+     "moves": [
+      "d4",
+      "d5",
+      "c4",
+      "c6",
+      "Nf3",
+      "Nf6",
+      "e3",
+      "Bf5",
+      "Nc3",
+      "e6",
+      "Nh4",
+      "Bg6",
+      "Nxg6",
+      "hxg6",
+      "Bd3",
+      "Nbd7",
+      "O-O",
+      "Bd6",
+      "h3",
+      "dxc4"
+     ],
+     "comments": {
+      "8": "Der Läufer ist außerhalb der Bauernkette.",
+      "14": "Die h-Linie wird halboffen."
+     }
+    }
+   ]
+  },
+  {
+   "id": "koenigsindisch",
+   "name": "Königsindisch",
+   "side": "b",
+   "eco": "E60–E99",
+   "group": "1.d4 Sf6",
+   "idea": "Schwarz lässt Weiß das Zentrum besetzen und greift es später mit …e5 an. Oft greift Schwarz am Königsflügel und Weiß am Damenflügel an. Kämpferisch und voller Leben.",
+   "lines": [
+    {
+     "name": "Klassisch (7…Sc6)",
+     "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "g6",
+      "Nc3",
+      "Bg7",
+      "e4",
+      "d6",
+      "Nf3",
+      "O-O",
+      "Be2",
+      "e5",
+      "O-O",
+      "Nc6",
+      "d5",
+      "Ne7",
+      "Ne1",
+      "Nd7",
+      "Nd3",
+      "f5"
+     ],
+     "comments": {
+      "12": "Der typische Angriff auf das Zentrum.",
+      "16": "Der Springer geht zum Königsflügel.",
+      "20": "Angriff am Königsflügel."
+     }
+    },
+    {
+     "name": "Sämisch (5.f3)",
+     "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "g6",
+      "Nc3",
+      "Bg7",
+      "e4",
+      "d6",
+      "f3",
+      "O-O",
+      "Be3",
+      "e5",
+      "d5",
+      "c6",
+      "Qd2",
+      "cxd5",
+      "cxd5",
+      "a6",
+      "g4",
+      "Nbd7"
+     ],
+     "comments": {
+      "14": "Öffnet die c-Linie."
+     }
+    },
+    {
+     "name": "Vierbauern-Angriff (5.f4)",
+     "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "g6",
+      "Nc3",
+      "Bg7",
+      "e4",
+      "d6",
+      "f4",
+      "O-O",
+      "Nf3",
+      "c5",
+      "d5",
+      "e6",
+      "Be2",
+      "exd5",
+      "cxd5",
+      "Bg4",
+      "O-O",
+      "Nbd7"
+     ],
+     "comments": {
+      "12": "Greift das breite Zentrum an.",
+      "18": "Tauscht einen Verteidiger von e4."
+     }
+    }
+   ]
+  },
+  {
+   "id": "nimzo",
+   "name": "Nimzowitsch-Indisch",
+   "side": "b",
+   "eco": "E20–E59",
+   "group": "1.d4 Sf6",
+   "idea": "Schwarz fesselt mit …Lb4 den Springer c3 und kontrolliert so e4. Oft gibt Schwarz das Läuferpaar ab, um die weiße Bauernstruktur zu schwächen. Eine der besten Verteidigungen gegen 1.d4.",
+   "lines": [
+    {
+     "name": "Rubinstein (4.e3)",
+     "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "e6",
+      "Nc3",
+      "Bb4",
+      "e3",
+      "O-O",
+      "Bd3",
+      "d5",
+      "Nf3",
+      "c5",
+      "O-O",
+      "Nc6",
+      "a3",
+      "Bxc3",
+      "bxc3",
+      "dxc4",
+      "Bxc4",
+      "Qc7"
+     ],
+     "comments": {
+      "6": "Fesselt den Springer und kontrolliert e4.",
+      "12": "Greift das Zentrum an.",
+      "16": "Schwarz gibt das Läuferpaar ab."
+     }
+    },
+    {
+     "name": "Klassisch (4.Dc2)",
+     "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "e6",
+      "Nc3",
+      "Bb4",
+      "Qc2",
+      "O-O",
+      "a3",
+      "Bxc3+",
+      "Qxc3",
+      "b6",
+      "Bg5",
+      "Bb7",
+      "f3",
+      "h6",
+      "Bh4",
+      "d5",
+      "e3",
+      "Nbd7"
+     ],
+     "comments": {
+      "7": "Die Dame kann auf c3 zurückschlagen.",
+      "12": "Der Läufer kommt nach b7 und kontrolliert e4."
+     }
+    },
+    {
+     "name": "Sämisch (4.a3)",
+     "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "e6",
+      "Nc3",
+      "Bb4",
+      "a3",
+      "Bxc3+",
+      "bxc3",
+      "c5",
+      "e3",
+      "Nc6",
+      "Bd3",
+      "O-O",
+      "Ne2",
+      "b6",
+      "e4",
+      "Ne8",
+      "O-O",
+      "Ba6"
+     ],
+     "comments": {
+      "9": "Weiß hat Doppelbauern auf c3 und c4.",
+      "18": "Verhindert die Fesselung durch Lg5.",
+      "20": "Greift den Schwachpunkt c4 an."
+     }
+    }
+   ]
+  },
+  {
+   "id": "gruenfeld",
+   "name": "Grünfeld-Indisch",
+   "side": "b",
+   "eco": "D70–D99",
+   "group": "1.d4 Sf6",
+   "idea": "Schwarz lässt Weiß ein großes Zentrum bauen und greift es dann mit Figuren und …c5 an. Der Läufer g7 ist die wichtigste Figur. Dynamisch und sehr konkret.",
+   "lines": [
+    {
+     "name": "Abtausch, modern (7.Sf3)",
+     "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "g6",
+      "Nc3",
+      "d5",
+      "cxd5",
+      "Nxd5",
+      "e4",
+      "Nxc3",
+      "bxc3",
+      "Bg7",
+      "Nf3",
+      "c5",
+      "Rb1",
+      "O-O",
+      "Be2",
+      "cxd4",
+      "cxd4",
+      "Qa5+"
+     ],
+     "comments": {
+      "6": "Der Grünfeld-Zug.",
+      "12": "Der Läufer drückt auf c3 und d4.",
+      "14": "Greift das Zentrum an."
+     }
+    },
+    {
+     "name": "Abtausch, klassisch (7.Lc4)",
+     "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "g6",
+      "Nc3",
+      "d5",
+      "cxd5",
+      "Nxd5",
+      "e4",
+      "Nxc3",
+      "bxc3",
+      "Bg7",
+      "Bc4",
+      "c5",
+      "Ne2",
+      "Nc6",
+      "Be3",
+      "O-O",
+      "O-O",
+      "Bg4"
+     ],
+     "comments": {
+      "16": "Erhöht den Druck auf d4."
+     }
+    },
+    {
+     "name": "4.Lf4",
+     "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "g6",
+      "Nc3",
+      "d5",
+      "Bf4",
+      "Bg7",
+      "e3",
+      "c5",
+      "dxc5",
+      "Qa5",
+      "Rc1",
+      "dxc4",
+      "Bxc4",
+      "O-O",
+      "Nf3",
+      "Qxc5",
+      "Bb3",
+      "Nc6"
+     ],
+     "comments": {
+      "10": "Greift sofort an."
+     }
+    },
+    {
+     "name": "Russisches System (5.Db3)",
+     "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "g6",
+      "Nc3",
+      "d5",
+      "Nf3",
+      "Bg7",
+      "Qb3",
+      "dxc4",
+      "Qxc4",
+      "O-O",
+      "e4",
+      "Bg4",
+      "Be3",
+      "Nfd7",
+      "Qb3",
+      "Nb6",
+      "Rd1",
+      "Nc6"
+     ],
+     "comments": {
+      "14": "Smyslow-System: Druck auf d4."
+     }
+    }
+   ]
+  },
+  {
+   "id": "hollaendisch",
+   "name": "Holländisch (Leningrader)",
+   "side": "b",
+   "eco": "A80–A99",
+   "group": "1.d4 f5",
+   "idea": "Schwarz kontrolliert mit …f5 das Feld e4 und kombiniert das mit dem Läufer-Fianchetto auf g7. Das führt zu unausgeglichenen Stellungen mit Angriffschancen am Königsflügel. Ideal für kämpferische Spieler.",
+   "lines": [
+    {
+     "name": "Hauptvariante (7…De8)",
+     "moves": [
+      "d4",
+      "f5",
+      "g3",
+      "Nf6",
+      "Bg2",
+      "g6",
+      "Nf3",
+      "Bg7",
+      "O-O",
+      "O-O",
+      "c4",
+      "d6",
+      "Nc3",
+      "Qe8",
+      "d5",
+      "Na6",
+      "Rb1",
+      "c5",
+      "dxc6",
+      "bxc6"
+     ],
+     "comments": {
+      "2": "Kontrolliert e4.",
+      "8": "Der Läufer auf der langen Diagonale.",
+      "14": "Bereitet …e5 vor."
+     }
+    },
+    {
+     "name": "Staunton-Gambit (2.e4)",
+     "moves": [
+      "d4",
+      "f5",
+      "e4",
+      "fxe4",
+      "Nc3",
+      "Nf6",
+      "Bg5",
+      "g6",
+      "f3",
+      "exf3",
+      "Nxf3",
+      "Bg7",
+      "Bd3",
+      "O-O",
+      "O-O",
+      "d6",
+      "Qe1",
+      "Nc6",
+      "Qh4",
+      "e5"
+     ],
+     "comments": {
+      "3": "Weiß opfert einen Bauern.",
+      "8": "Leningrader Aufbau trotz Gambit.",
+      "20": "Kontert im Zentrum."
+     }
+    },
+    {
+     "name": "Mit 4.Sh3",
+     "moves": [
+      "d4",
+      "f5",
+      "g3",
+      "Nf6",
+      "Bg2",
+      "g6",
+      "Nh3",
+      "Bg7",
+      "O-O",
+      "O-O",
+      "c4",
+      "d6",
+      "Nc3",
+      "c6",
+      "d5",
+      "e5",
+      "dxe6",
+      "Bxe6",
+      "Nf4",
+      "Bf7"
+     ],
+     "comments": {
+      "7": "Der Springer will nach f4."
+     }
+    }
+   ]
+  },
+  {
+   "id": "damenindisch",
+   "name": "Damenindisch",
+   "side": "b",
+   "eco": "E12–E19",
+   "group": "1.d4 Sf6",
+   "idea": "Schwarz fianchettiert den Damenläufer nach b7 oder a6 und kontrolliert so das Feld e4. Eine ruhige, solide Verteidigung mit klaren Plänen. Gut gegen 3.Sf3, wenn Weiß Nimzowitsch-Indisch vermeidet.",
+   "lines": [
+    {
+     "name": "Fianchetto (4.g3)",
+     "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "e6",
+      "Nf3",
+      "b6",
+      "g3",
+      "Ba6",
+      "b3",
+      "Bb4+",
+      "Bd2",
+      "Be7",
+      "Bg2",
+      "c6",
+      "Bc3",
+      "d5",
+      "Ne5",
+      "Nfd7",
+      "Nxd7",
+      "Nxd7"
+     ],
+     "comments": {
+      "6": "Bereitet das Läufer-Fianchetto vor.",
+      "8": "Greift den Bauern c4 an.",
+      "12": "Der Läufer zieht sich zurück; der Läufer d2 steht unglücklich."
+     }
+    },
+    {
+     "name": "Petrosjan (4.a3)",
+     "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "e6",
+      "Nf3",
+      "b6",
+      "a3",
+      "Bb7",
+      "Nc3",
+      "d5",
+      "cxd5",
+      "Nxd5",
+      "Qc2",
+      "Nxc3",
+      "bxc3",
+      "Be7",
+      "e4",
+      "O-O",
+      "Bd3",
+      "c5"
+     ],
+     "comments": {
+      "8": "Kontrolliert e4.",
+      "20": "Greift das Zentrum an."
+     }
+    },
+    {
+     "name": "4.e3",
+     "moves": [
+      "d4",
+      "Nf6",
+      "c4",
+      "e6",
+      "Nf3",
+      "b6",
+      "e3",
+      "Bb7",
+      "Bd3",
+      "d5",
+      "O-O",
+      "Bd6",
+      "b3",
+      "O-O",
+      "Bb2",
+      "Nbd7",
+      "Nc3",
+      "a6",
+      "Qe2",
+      "Ne4"
+     ],
+     "comments": {
+      "20": "Der Springer besetzt das Schlüsselfeld e4."
+     }
+    }
+   ]
+  }
+ ]
+}

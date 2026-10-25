@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Eröffnungstrainer</title>
+<meta name="description" content="Schach-Eröffnungen lernen: Theorie durchgehen und Varianten trainieren.">
+<meta name="theme-color" content="#2f6b4f">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Literata:opsz,wght@7..72,500;7..72,700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--APP-BODY-START-->
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true"><path d="M30 84H72C72 64 66 50 64 40C62 28 54 20 42 18L40 12L34 20C28 24 22 34 20 44C19 50 24 54 28 52L36 46C40 46 44 44 46 40C46 50 38 58 34 66C32 72 30 78 30 84Z"/></svg>
+      <span class="brand-name">Eröffnungstrainer</span>
+    </div>
+    <nav class="tabs" role="tablist" aria-label="Bereiche">
+      <button class="tab" role="tab" id="tab-theorie" data-view="theorie" aria-selected="true">Theorie</button>
+      <button class="tab" role="tab" id="tab-training" data-view="training" aria-selected="false">Training</button>
+      <button class="tab" role="tab" id="tab-statistik" data-view="statistik" aria-selected="false">Statistik</button>
+    </nav>
+    <button class="icon-btn" id="theme-btn" type="button" aria-label="Farbschema wechseln" title="Farbschema: automatisch">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16Z" class="fill"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="update-banner" id="update-banner" hidden>
+  <span>Eine neue Version ist da.</span>
+  <button type="button" class="btn small" id="update-btn">Neu laden</button>
+</div>
+
+<main class="wrap" id="app">
+  <p class="loading" id="loading">Eröffnungen werden geladen …</p>
+
+  <!-- THEORIE: Liste -->
+  <section class="view" id="view-theorie-list" hidden>
+    <div class="list-head">
+      <h1>Eröffnungen</h1>
+      <p class="lead">Wähle eine Eröffnung und geh sie Zug für Zug durch. An jeder Verzweigung siehst du, wie du auf die verschiedenen Gegnerzüge reagierst.</p>
+    </div>
+    <div class="list-tools">
+      <label class="search">
+        <span class="sr-only">Eröffnung suchen</span>
+        <input type="search" id="op-search" placeholder="Suchen, z. B. Sizilianisch oder C60" autocomplete="off">
+      </label>
+      <div class="seg" role="group" aria-label="Seite filtern">
+        <button type="button" class="seg-btn" data-filter="all" aria-pressed="true">Alle</button>
+        <button type="button" class="seg-btn" data-filter="w" aria-pressed="false">Mit Weiß</button>
+        <button type="button" class="seg-btn" data-filter="b" aria-pressed="false">Mit Schwarz</button>
+      </div>
+    </div>
+    <div id="op-list" class="op-list"></div>
+  </section>
+
+  <!-- THEORIE: Eröffnung -->
+  <section class="view" id="view-theorie-op" hidden>
+    <button type="button" class="back" id="th-back">← Alle Eröffnungen</button>
+    <div class="study">
+      <div class="board-col">
+        <div class="board-host" id="th-board"></div>
+        <div class="controls">
+          <button type="button" class="ctl" id="th-first" aria-label="Zum Anfang">⏮</button>
+          <button type="button" class="ctl" id="th-prev" aria-label="Zug zurück">◀</button>
+          <button type="button" class="ctl primary" id="th-next" aria-label="Nächster Zug">▶</button>
+          <button type="button" class="ctl" id="th-last" aria-label="Zum Ende der Variante">⏭</button>
+          <button type="button" class="ctl" id="th-flip" aria-label="Brett drehen" title="Brett drehen">⇅</button>
+        </div>
+      </div>
+      <div class="panel-col">
+        <div class="op-head">
+          <div class="op-meta"><span class="side-badge" id="th-side"></span><span class="eco" id="th-eco"></span></div>
+          <h1 id="th-name"></h1>
+          <p class="idea" id="th-idea"></p>
+        </div>
+        <div class="block">
+          <h2 class="label">Varianten</h2>
+          <div class="chips" id="th-lines"></div>
+        </div>
+        <div class="block note" id="th-comment" aria-live="polite"></div>
+        <div class="block branch" id="th-branch" hidden></div>
+        <div class="block">
+          <h2 class="label">Zugfolge <span class="hint-inline">tippe auf einen Zug, um hinzuspringen</span></h2>
+          <ol class="movelist" id="th-moves"></ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAINING: Einstellungen -->
+  <section class="view" id="view-training-setup" hidden>
+    <div class="list-head">
+      <h1>Training</h1>
+      <p class="lead">Der Gegner spielt Züge aus den Varianten, du ziehst die richtige Antwort auf dem Brett. Varianten mit Fehlern kommen öfter wieder dran.</p>
+    </div>
+    <form class="setup" id="tr-form">
+      <fieldset>
+        <legend>Deine Farbe</legend>
+        <div class="seg" role="group">
+          <button type="button" class="seg-btn" data-color="w" aria-pressed="true">Weiß</button>
+          <button type="button" class="seg-btn" data-color="b" aria-pressed="false">Schwarz</button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Modus</legend>
+        <div class="seg" role="group">
+          <button type="button" class="seg-btn" data-mode="random" aria-pressed="true">Zufall</button>
+          <button type="button" class="seg-btn" data-mode="target" aria-pressed="false">Gezielt</button>
+        </div>
+        <p class="help" id="tr-mode-help"></p>
+      </fieldset>
+      <div class="target-fields" id="tr-target" hidden>
+        <label class="field"><span>Eröffnung</span><select id="tr-op"></select></label>
+        <label class="field"><span>Variante</span><select id="tr-line"></select></label>
+      </div>
+      <div class="due" id="tr-due"></div>
+      <button type="submit" class="btn primary big" id="tr-start">Training starten</button>
+    </form>
+  </section>
+
+  <!-- TRAINING: Sitzung -->
+  <section class="view" id="view-training-run" hidden>
+    <button type="button" class="back" id="tr-back">← Einstellungen</button>
+    <div class="study">
+      <div class="board-col">
+        <div class="board-host" id="tr-board"></div>
+        <div class="controls">
+          <button type="button" class="btn" id="tr-hint">Tipp zeigen</button>
+          <button type="button" class="btn" id="tr-skip">Andere Variante</button>
+        </div>
+      </div>
+      <div class="panel-col">
+        <div class="op-head">
+          <div class="op-meta"><span class="side-badge" id="tr-side"></span><span class="eco" id="tr-eco"></span></div>
+          <h1 id="tr-name"></h1>
+          <p class="variant-line" id="tr-variant"></p>
+        </div>
+        <div class="score">
+          <div><span class="score-num" id="tr-progress">0/0</span><span class="score-lbl">deine Züge</span></div>
+          <div><span class="score-num" id="tr-errors">0</span><span class="score-lbl">Fehler</span></div>
+          <div><span class="score-num" id="tr-streak">0</span><span class="score-lbl">fehlerfrei in Folge</span></div>
+        </div>
+        <div class="block feedback" id="tr-feedback" aria-live="polite"></div>
+        <div class="block result" id="tr-result" hidden></div>
+        <div class="block">
+          <h2 class="label">Bisher gespielt</h2>
+          <ol class="movelist" id="tr-moves"></ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATISTIK -->
+  <section class="view" id="view-statistik" hidden>
+    <div class="list-head">
+      <h1>Statistik</h1>
+      <p class="lead">Eine Variante „sitzt“, wenn du sie zweimal hintereinander fehlerfrei gespielt hast. Die Trefferquote zählt nur den ersten Versuch pro Zug.</p>
+    </div>
+    <div class="totals" id="st-totals"></div>
+    <div id="st-list" class="st-list"></div>
+    <div class="data-tools">
+      <h2 class="label">Fortschritt sichern</h2>
+      <p class="help">Dein Fortschritt liegt nur in diesem Browser. Sichere ihn als Datei, bevor du Browserdaten löschst oder das Gerät wechselst.</p>
+      <div class="row">
+        <button type="button" class="btn" id="st-export">Fortschritt exportieren</button>
+        <label class="btn" for="st-import-file">Fortschritt importieren</label>
+        <input type="file" id="st-import-file" accept="application/json,.json" hidden>
+        <button type="button" class="btn danger" id="st-reset">Zurücksetzen</button>
+      </div>
+      <div class="confirm" id="st-confirm" hidden>
+        <span>Wirklich den gesamten Fortschritt löschen?</span>
+        <button type="button" class="btn danger small" id="st-reset-yes">Ja, löschen</button>
+        <button type="button" class="btn small" id="st-reset-no">Abbrechen</button>
+      </div>
+      <p class="help" id="st-msg" aria-live="polite"></p>
+      <textarea id="st-export-text" class="export-text" readonly hidden aria-label="Exportierte Daten"></textarea>
+    </div>
+  </section>
+</main>
+<!--APP-BODY-END-->
+<script src="chess-core.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
