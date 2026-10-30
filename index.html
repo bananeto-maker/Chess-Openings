@@ -20,11 +20,13 @@
   <div class="topbar-inner">
     <div class="brand">
       <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true"><path d="M30 84H72C72 64 66 50 64 40C62 28 54 20 42 18L40 12L34 20C28 24 22 34 20 44C19 50 24 54 28 52L36 46C40 46 44 44 46 40C46 50 38 58 34 66C32 72 30 78 30 84Z"/></svg>
-      <span class="brand-name">Eröffnungstrainer</span>
+      <span class="brand-name">Eröffnungstrainer</span><span class="ver">v<span class="app-version">1.2</span></span>
     </div>
     <nav class="tabs" role="tablist" aria-label="Bereiche">
-      <button class="tab" role="tab" id="tab-theorie" data-view="theorie" aria-selected="true">Theorie</button>
+      <button class="tab" role="tab" id="tab-heute" data-view="heute" aria-selected="true">Heute</button>
+      <button class="tab" role="tab" id="tab-theorie" data-view="theorie" aria-selected="false">Theorie</button>
       <button class="tab" role="tab" id="tab-training" data-view="training" aria-selected="false">Training</button>
+      <button class="tab" role="tab" id="tab-eigene" data-view="eigene" aria-selected="false">Eigene</button>
       <button class="tab" role="tab" id="tab-statistik" data-view="statistik" aria-selected="false">Statistik</button>
     </nav>
     <button class="icon-btn" id="theme-btn" type="button" aria-label="Farbschema wechseln" title="Farbschema: automatisch">
@@ -40,6 +42,29 @@
 
 <main class="wrap" id="app">
   <p class="loading" id="loading">Eröffnungen werden geladen …</p>
+
+  <!-- HEUTE -->
+  <section class="view" id="view-heute" hidden>
+    <div class="list-head">
+      <h1>Heute trainieren</h1>
+      <p class="lead">Ein Klick genügt: Die App stellt fällige Varianten, neue Hauptvarianten und eine Falle zusammen. Was du zuletzt falsch hattest, kommt zuerst.</p>
+    </div>
+    <div class="block result" id="today-done" hidden></div>
+    <div class="totals" id="today-summary"></div>
+    <div class="today-cta">
+      <button type="button" class="btn primary big" id="today-start">Heute trainieren</button>
+      <p class="help" id="today-plan"></p>
+      <p class="help" id="today-note"></p>
+    </div>
+    <div class="block">
+      <h2 class="label">Oder gezielt üben</h2>
+      <div class="row">
+        <button type="button" class="btn" id="today-free">Freies Training</button>
+        <button type="button" class="btn" id="today-traps">Fallen üben</button>
+        <button type="button" class="btn" id="today-gs">Gegen eine Eröffnung üben</button>
+      </div>
+    </div>
+  </section>
 
   <!-- THEORIE: Liste -->
   <section class="view" id="view-theorie-list" hidden>
@@ -57,6 +82,8 @@
         <button type="button" class="seg-btn" data-filter="w" aria-pressed="false">Mit Weiß</button>
         <button type="button" class="seg-btn" data-filter="b" aria-pressed="false">Mit Schwarz</button>
       </div>
+      <label class="mini-field"><span>Stufe</span><select id="th-stufe-filter"><option value="all">Alle Stufen</option><option value="anfaenger">Anfänger</option><option value="fortgeschritten">Fortgeschritten</option><option value="profi">Profi</option></select></label>
+      <label class="mini-field"><span>Sortierung</span><select id="th-sort"><option value="farbe">nach Farbe</option><option value="stufe">nach Stufe</option></select></label>
     </div>
     <div id="op-list" class="op-list"></div>
   </section>
@@ -80,6 +107,9 @@
           <div class="op-meta"><span class="side-badge" id="th-side"></span><span class="eco" id="th-eco"></span></div>
           <h1 id="th-name"></h1>
           <p class="idea" id="th-idea"></p>
+          <div class="stufe-box" id="th-stufe"></div>
+          <p class="help" id="th-score" hidden></p>
+          <div class="row" id="th-actions"></div>
         </div>
         <div class="block">
           <h2 class="label">Varianten</h2>
@@ -103,23 +133,32 @@
     </div>
     <form class="setup" id="tr-form">
       <fieldset>
+        <legend>Was möchtest du üben?</legend>
+        <div class="seg" role="group">
+          <button type="button" class="seg-btn" data-mode="random" aria-pressed="true">Zufall</button>
+          <button type="button" class="seg-btn" data-mode="target" aria-pressed="false">Gezielt</button>
+          <button type="button" class="seg-btn" data-mode="gs" aria-pressed="false">Gegenseite</button>
+          <button type="button" class="seg-btn" data-mode="traps" aria-pressed="false">Fallen</button>
+        </div>
+        <p class="help" id="tr-mode-help"></p>
+      </fieldset>
+      <fieldset id="tr-color-field">
         <legend>Deine Farbe</legend>
         <div class="seg" role="group">
           <button type="button" class="seg-btn" data-color="w" aria-pressed="true">Weiß</button>
           <button type="button" class="seg-btn" data-color="b" aria-pressed="false">Schwarz</button>
         </div>
       </fieldset>
-      <fieldset>
-        <legend>Modus</legend>
-        <div class="seg" role="group">
-          <button type="button" class="seg-btn" data-mode="random" aria-pressed="true">Zufall</button>
-          <button type="button" class="seg-btn" data-mode="target" aria-pressed="false">Gezielt</button>
-        </div>
-        <p class="help" id="tr-mode-help"></p>
-      </fieldset>
+      <label class="field"><span>Stufe</span><select id="tr-stufe"><option value="all">Alle Stufen</option><option value="anfaenger">Anfänger</option><option value="fortgeschritten">Fortgeschritten</option><option value="profi">Profi</option></select></label>
       <div class="target-fields" id="tr-target" hidden>
         <label class="field"><span>Eröffnung</span><select id="tr-op"></select></label>
         <label class="field"><span>Variante</span><select id="tr-line"></select></label>
+      </div>
+      <div class="target-fields" id="tr-gs" hidden>
+        <label class="field"><span>Gegen welche Eröffnung?</span><select id="tr-gs-op"></select></label>
+      </div>
+      <div class="target-fields" id="tr-trapsel" hidden>
+        <label class="field"><span>Fallen aus</span><select id="tr-trap-op"></select></label>
       </div>
       <div class="due" id="tr-due"></div>
       <button type="submit" class="btn primary big" id="tr-start">Training starten</button>
@@ -128,18 +167,20 @@
 
   <!-- TRAINING: Sitzung -->
   <section class="view" id="view-training-run" hidden>
-    <button type="button" class="back" id="tr-back">← Einstellungen</button>
+    <button type="button" class="back" id="tr-back">← Beenden</button>
+    <div class="session-bar" id="tr-session" hidden></div>
     <div class="study">
       <div class="board-col">
         <div class="board-host" id="tr-board"></div>
         <div class="controls">
           <button type="button" class="btn" id="tr-hint">Tipp zeigen</button>
-          <button type="button" class="btn" id="tr-skip">Andere Variante</button>
+          <button type="button" class="btn" id="tr-skip">Überspringen</button>
+          <button type="button" class="ctl" id="tr-flip" aria-label="Brett drehen" title="Brett drehen">⇅</button>
         </div>
       </div>
       <div class="panel-col">
         <div class="op-head">
-          <div class="op-meta"><span class="side-badge" id="tr-side"></span><span class="eco" id="tr-eco"></span></div>
+          <div class="op-meta"><span class="mode-badge" id="tr-mode"></span><span class="side-badge" id="tr-side"></span><span class="eco" id="tr-eco"></span></div>
           <h1 id="tr-name"></h1>
           <p class="variant-line" id="tr-variant"></p>
         </div>
@@ -158,6 +199,72 @@
     </div>
   </section>
 
+  <!-- EIGENE: Liste -->
+  <section class="view" id="view-eigene-list" hidden>
+    <div class="list-head">
+      <h1>Eigene Eröffnungen</h1>
+      <p class="lead">Trage Eröffnungen ein, die du selbst spielen willst. Sie erscheinen in Theorie und Training und werden genauso wiederholt wie die eingebauten.</p>
+    </div>
+    <div class="row"><button type="button" class="btn primary" id="cu-new">Neue Eröffnung eintragen</button><button type="button" class="btn" id="cu-import">Eröffnungen importieren</button></div>
+    <div class="imp-panel" id="imp-panel" hidden>
+      <h2 class="label">Eröffnungen importieren</h2>
+      <p class="help">Wähle eine Importdatei (.json), zum Beispiel eine, die Claude für dich erstellt hat, oder füge ihren Text unten ein. Alle Züge werden vor dem Import geprüft.</p>
+      <div class="row"><label class="btn" for="imp-file">Datei wählen …</label><input type="file" id="imp-file" accept="application/json,.json" hidden></div>
+      <label class="field"><span>Oder Text einfügen</span><textarea id="imp-text" rows="5" placeholder='{"openings": [ { "name": "Italienische Partie", "side": "w", "lines": [ … ] } ]}'></textarea></label>
+      <p class="field-err" id="imp-text-err" aria-live="polite"></p>
+      <div class="row"><button type="button" class="btn primary" id="imp-go">Text prüfen und importieren</button></div>
+      <div class="confirm" id="imp-conflict" hidden><span id="imp-conflict-text"></span><button type="button" class="btn small" id="imp-replace">Ersetzen</button><button type="button" class="btn small" id="imp-copy">Als Kopie importieren</button><button type="button" class="btn small" id="imp-cancel">Abbrechen</button></div>
+      <div class="block feedback" id="imp-msg" aria-live="polite" hidden></div>
+    </div>
+    <p class="help" id="cu-msg" aria-live="polite"></p>
+    <div id="cu-list"></div>
+  </section>
+
+  <!-- EIGENE: Editor -->
+  <section class="view" id="view-editor" hidden>
+    <button type="button" class="back" id="ed-cancel">← Abbrechen</button>
+    <div class="study">
+      <div class="board-col">
+        <div class="board-host" id="ed-board"></div>
+        <div class="controls">
+          <button type="button" class="ctl" id="ed-first" aria-label="Zum Anfang">⏮</button>
+          <button type="button" class="ctl" id="ed-prev" aria-label="Zug zurück">◀</button>
+          <button type="button" class="ctl" id="ed-next" aria-label="Nächster Zug">▶</button>
+          <button type="button" class="ctl" id="ed-flip" aria-label="Brett drehen" title="Brett drehen">⇅</button>
+          <button type="button" class="btn danger" id="ed-del">Zug löschen</button>
+        </div>
+      </div>
+      <div class="panel-col">
+        <h1 id="ed-title">Neue Eröffnung</h1>
+        <p class="help ext-note" id="ed-ext-note" hidden>Eingebaute Züge sind gesperrt. Hänge am Ende einer Variante weitere Züge an oder ziehe an einem Gegnerzug eine neue Antwort des Gegners und danach deine beste Antwort. Deine Ergänzungen sind grün markiert und werden getrennt gespeichert.</p>
+        <label class="field ed-only"><span>Name</span><input type="text" id="ed-name" maxlength="60" placeholder="Italienisch mit d3" autocomplete="off"></label>
+        <p class="field-err" id="ed-name-err" aria-live="polite"></p>
+        <fieldset class="ed-only">
+          <legend>Du spielst</legend>
+          <div class="seg" role="group" id="ed-side">
+            <button type="button" class="seg-btn" data-side="w" aria-pressed="true">Weiß</button>
+            <button type="button" class="seg-btn" data-side="b" aria-pressed="false">Schwarz</button>
+          </div>
+        </fieldset>
+        <div class="block note" id="ed-info" aria-live="polite"></div>
+        <p class="help ed-msg" id="ed-msg" aria-live="polite"></p>
+        <div class="block branch" id="ed-branch" hidden></div>
+        <div class="block">
+          <h2 class="label">Zugfolge <span class="hint-inline">ziehe auf dem Brett; tippe auf einen Zug, um zurückzuspringen</span></h2>
+          <ol class="movelist" id="ed-moves"></ol>
+        </div>
+        <label class="field" id="ed-comment-field" hidden><span id="ed-comment-label">Warum? (optional)</span><textarea id="ed-comment" rows="2" maxlength="200" placeholder="Entwickelt eine Figur und kontrolliert das Zentrum."></textarea></label>
+        <div class="block">
+          <h2 class="label">Varianten</h2>
+          <p class="help">Für eine neue Variante springst du zu einem Gegnerzug zurück und ziehst dort eine andere Antwort des Gegners.</p>
+          <ol class="ed-lines" id="ed-lines"></ol>
+        </div>
+        <label class="field ed-only"><span>Notiz zur Eröffnung (optional)</span><textarea id="ed-idea" rows="2" maxlength="400" placeholder="Worum geht es in dieser Eröffnung?"></textarea></label>
+        <div class="row"><button type="button" class="btn primary" id="ed-save">Speichern</button></div>
+      </div>
+    </div>
+  </section>
+
   <!-- STATISTIK -->
   <section class="view" id="view-statistik" hidden>
     <div class="list-head">
@@ -167,21 +274,22 @@
     <div class="totals" id="st-totals"></div>
     <div id="st-list" class="st-list"></div>
     <div class="data-tools">
-      <h2 class="label">Fortschritt sichern</h2>
-      <p class="help">Dein Fortschritt liegt nur in diesem Browser. Sichere ihn als Datei, bevor du Browserdaten löschst oder das Gerät wechselst.</p>
+      <h2 class="label">Lernstand sichern</h2>
+      <p class="help">Dein Lernstand und deine eigenen Eröffnungen liegen nur in diesem Browser. Sichere sie als Datei, bevor du Browserdaten löschst oder das Gerät wechselst. Auch ein Lernstand aus Version 1.0 lässt sich importieren.</p>
       <div class="row">
-        <button type="button" class="btn" id="st-export">Fortschritt exportieren</button>
-        <label class="btn" for="st-import-file">Fortschritt importieren</label>
+        <button type="button" class="btn" id="st-export">Lernstand exportieren</button>
+        <label class="btn" for="st-import-file">Lernstand importieren</label>
         <input type="file" id="st-import-file" accept="application/json,.json" hidden>
         <button type="button" class="btn danger" id="st-reset">Zurücksetzen</button>
       </div>
       <div class="confirm" id="st-confirm" hidden>
-        <span>Wirklich den gesamten Fortschritt löschen?</span>
+        <span>Wirklich den gesamten Lernstand löschen? Eigene Eröffnungen bleiben erhalten.</span>
         <button type="button" class="btn danger small" id="st-reset-yes">Ja, löschen</button>
         <button type="button" class="btn small" id="st-reset-no">Abbrechen</button>
       </div>
       <p class="help" id="st-msg" aria-live="polite"></p>
       <textarea id="st-export-text" class="export-text" readonly hidden aria-label="Exportierte Daten"></textarea>
+      <p class="help">Eröffnungstrainer Version <span class="app-version">1.2</span></p>
     </div>
   </section>
 </main>

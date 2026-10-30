@@ -1,5 +1,5 @@
 /* Service Worker: macht die App offline nutzbar. Bei Änderungen VERSION erhöhen. */
-const VERSION = 'v1.0.0';
+const VERSION = 'v1.2.0';
 const CACHE = 'eroeffnungstrainer-' + VERSION;
 const FILES = [
   './', 'index.html', 'styles.css', 'app.js', 'chess-core.js', 'openings.json',
